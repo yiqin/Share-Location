@@ -21,9 +21,9 @@ class MainViewController: UIViewController {
         self.view.backgroundColor = UIColor.whiteColor()
         
         
+
         
-        var b = UIBarButtonItem(title: "Login", style: .Plain, target: self, action: "pressLogin")
-        self.navigationItem.rightBarButtonItem = b
+        
     }
 
     required init(coder aDecoder: NSCoder) {
@@ -58,6 +58,21 @@ class MainViewController: UIViewController {
         
     }
     
+    override func viewWillAppear(animated: Bool) {
+        if (PFUser.currentUser() != nil) {
+            self.setRightNavigationItem()
+        }
+        else {
+            var b = UIBarButtonItem(title: "Login", style: .Plain, target: self, action: "pressLogin")
+            self.navigationItem.rightBarButtonItem = b
+        }
+    }
+    
+    func setRightNavigationItem() {
+        var b = UIBarButtonItem(title: "Setting", style: .Plain, target: self, action: "pressProfileSetting")
+        self.navigationItem.rightBarButtonItem = b
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -72,12 +87,19 @@ class MainViewController: UIViewController {
                 } else {
                     println("User logged in through Facebook!")
                     FacebookDataManager.loadData()
+                    self.setRightNavigationItem()
+                    
+                    // We need to update something here....
                     
                 }
             } else {
                 println("Uh oh. The user cancelled the Facebook login.")
             }
         })
+    }
+    
+    func pressProfileSetting() {
+        
     }
 
 }
