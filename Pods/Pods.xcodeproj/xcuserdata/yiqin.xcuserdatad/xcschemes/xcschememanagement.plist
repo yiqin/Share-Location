@@ -4,7 +4,22 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>Pods-AFNetworking.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-Bolts.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-Colours.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-DateTools.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -29,6 +44,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>Pods-SVProgressHUD.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -37,32 +57,52 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>7D500ED1666DFA7758AF735E</key>
+		<key>139141D5475CD79A55609C6E</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>8202D7EF054D6431142D23E8</key>
+		<key>1DBA8F1E1167EA63012D333B</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>887E762F02F1B5C72DC5A606</key>
+		<key>24EF52BD8E80B583464C08B3</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>9C46B4632B81B5E7904D839C</key>
+		<key>2C0EF426862EDE26016534E4</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>A966C99667933EE6720545F8</key>
+		<key>46A8AC364A3D305BB8ED0FCC</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>A9B4160B54B0523A71633FCF</key>
+		<key>59619DF3C5BBBBF7E32B9FE8</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>870CFD2E2554D62DAC46B770</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>9C5579577FA57A67189F1A0D</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>C731500297E5B85383200AA5</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>E21759D090B10F9AE0E1AE71</key>
 		<dict>
 			<key>primary</key>
 			<true/>

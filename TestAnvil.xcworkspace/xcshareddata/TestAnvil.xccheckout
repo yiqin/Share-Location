@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>E37C69E8-99BB-4070-9009-6F34895F2642</string>
+	<key>IDESourceControlProjectName</key>
+	<string>TestAnvil</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>A86CE4F17388C31A14A43176B9105584077672F7</key>
+		<string>https://github.com/yiqin/TestAnvil.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>TestAnvil.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>A86CE4F17388C31A14A43176B9105584077672F7</key>
+		<string>..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/yiqin/TestAnvil.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>A86CE4F17388C31A14A43176B9105584077672F7</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>A86CE4F17388C31A14A43176B9105584077672F7</string>
+			<key>IDESourceControlWCCName</key>
+			<string>TestAnvil</string>
+		</dict>
+	</array>
+</dict>
+</plist>
