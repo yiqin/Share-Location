@@ -51,17 +51,8 @@ class TestAnvilLocationManager: NSObject, CLLocationManagerDelegate{
         
         println("locations = \(locations)")
         
-        // Post HTTTP request....
-        
-        /*
-        var object = PFObject(className: "test")
-        object["title"] = "this is a test."
-        object.saveInBackgroundWithBlock { (success:Bool!, error:NSError!) -> Void in
-            println("save this is a test.")
-        }
-        */
-        
-        
+        let currentGeoPoint = PFGeoPoint(latitude: location.coordinate.latitude, longitude: location.coordinate.longitude)
+        CurrentUserManager.sharedInstance.updateCurrentGeopoint(currentGeoPoint)
     }
     
     func locationManager(manager: CLLocationManager!, didFailWithError error: NSError!) {

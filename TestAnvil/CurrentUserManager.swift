@@ -11,6 +11,7 @@ import UIKit
 class CurrentUserManager: NSObject {
 
     var hasLoginWithFacebook = false
+    var currentGeoPoint:PFGeoPoint = PFGeoPoint()
     
     class var sharedInstance : CurrentUserManager {
         struct Static {
@@ -19,12 +20,13 @@ class CurrentUserManager: NSObject {
         return Static.instance
     }
     
-    // update later
-    func saveCurrentGeopointToParse(){
-        
-        PFUser.currentUser()["name"] = "test"
-        PFUser.currentUser()["screenName"] = "test"
-        
+    func updateCurrentGeopoint(currentGeoPoint:PFGeoPoint){
+        self.currentGeoPoint = currentGeoPoint
+        self .saveCurrentGeopointToParse()
+    }
+    
+    func saveCurrentGeopointToParse() {
+        PFUser.currentUser()["currentLocation"] = currentGeoPoint
         PFUser.currentUser().saveInBackgroundWithBlock { (succeeded:Bool!, error:NSError!) -> Void in
             if((succeeded) != nil){
                 println("update pfuser successfully.")
