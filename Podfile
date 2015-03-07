@@ -6,3 +6,4 @@ pod 'DateTools'
 pod 'AFNetworking'
 pod 'SVProgressHUD', :head
 pod 'MSDynamicsDrawerViewController'
+pod 'TTTAttributedLabel'

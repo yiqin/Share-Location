@@ -33,9 +33,5 @@
     // Dispose of any resources that can be recreated.
 }
 
-- (void)transitionToViewController:(MSPaneViewControllerType)paneViewControllerType
-{
-    
-}
 
 @end

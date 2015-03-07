@@ -10,23 +10,9 @@
 #import <MSDynamicsDrawerViewController.h>
 #import <MSDynamicsDrawerStyler.h>
 
-typedef NS_ENUM(NSUInteger, MSPaneViewControllerType) {
-    MSPaneViewControllerTypeStylers,
-    MSPaneViewControllerTypeDynamics,
-    MSPaneViewControllerTypeBounce,
-    MSPaneViewControllerTypeGestures,
-    MSPaneViewControllerTypeControls,
-    MSPaneViewControllerTypeMap,
-    MSPaneViewControllerTypeEditableTable,
-    MSPaneViewControllerTypeLongTable,
-    MSPaneViewControllerTypeMonospace,
-    MSPaneViewControllerTypeCount
-};
 
 @interface LeftViewController : UIViewController
 
 @property (nonatomic, weak) MSDynamicsDrawerViewController *dynamicsDrawerViewController;
-
-- (void)transitionToViewController:(MSPaneViewControllerType)paneViewControllerType;
 
 @end

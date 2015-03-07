@@ -14,6 +14,7 @@
 #import "MSDynamicsDrawerViewController.h"
 #import "MSDynamicsDrawerStyler.h"
 
+#import "MainNavigationController.h"
 #import "MainViewController.h"
 #import "LeftViewController.h"
 #import "RightViewController.h"
@@ -66,8 +67,8 @@
     
     self.dynamicsDrawerViewController = [[MSDynamicsDrawerViewController alloc] initWithNibName:nil bundle:nil];
     self.dynamicsDrawerViewController.delegate = self;
-    self.dynamicsDrawerViewController.gravityMagnitude = 10.0;
-    self.dynamicsDrawerViewController.elasticity = 0.275;
+    self.dynamicsDrawerViewController.gravityMagnitude = 13.0;
+    self.dynamicsDrawerViewController.elasticity = 0.05;
     
     // Style settings
     [self.dynamicsDrawerViewController addStylersFromArray:@[[MSDynamicsDrawerScaleStyler styler], [MSDynamicsDrawerFadeStyler styler]] forDirection:MSDynamicsDrawerDirectionLeft];
@@ -75,8 +76,15 @@
     
     
     
+    
     MainViewController *mainViewController = [[MainViewController alloc] initWithNibName:nil bundle:nil];
-    self.dynamicsDrawerViewController.paneViewController = mainViewController;
+    
+    MainNavigationController *mainNavigationController = [[MainNavigationController alloc] initWithRootViewController:mainViewController];
+    
+    self.dynamicsDrawerViewController.paneViewController = mainNavigationController;
+    
+    
+    
     
     LeftViewController *leftViewController = [[LeftViewController alloc] initWithNibName:nil bundle:nil];
     [self.dynamicsDrawerViewController setDrawerViewController:leftViewController forDirection:MSDynamicsDrawerDirectionLeft];

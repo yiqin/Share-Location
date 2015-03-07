@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "841688344C7F8DCAB73934D4"
-               BuildableName = "libPods-ParseFacebookUtils.a"
-               BlueprintName = "Pods-ParseFacebookUtils"
+               BlueprintIdentifier = "BBA2CD2FE3E38C0EDA19B6EB"
+               BuildableName = "libPods-TTTAttributedLabel.a"
+               BlueprintName = "Pods-TTTAttributedLabel"
                ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
