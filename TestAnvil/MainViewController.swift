@@ -49,6 +49,19 @@ class MainViewController: UIViewController {
         infoView.autoresizingMask = UIViewAutoresizing.FlexibleTopMargin | UIViewAutoresizing.FlexibleWidth
         view.addSubview(infoView)
         
+        PFFacebookUtils.logInWithPermissions(nil, {
+            (user: PFUser!, error: NSError!) -> Void in
+            if let user = user {
+                if user.isNew {
+                    println("User signed up and logged in through Facebook!")
+                } else {
+                    println("User logged in through Facebook!")
+                }
+            } else {
+                println("Uh oh. The user cancelled the Facebook login.")
+            }
+        })
+        
     }
     
     override func didReceiveMemoryWarning() {

@@ -19,6 +19,7 @@
 #import "RightViewController.h"
 
 #import "LeftDataManager.h"
+#import <ParseFacebookUtils/PFFacebookUtils.h>
 
 @interface AppDelegate () <MSDynamicsDrawerViewControllerDelegate>
 
@@ -44,6 +45,7 @@
     // Parse.com
     [Parse setApplicationId:@"205P4oUq3V0ZwBkD7U12KP0WsHCX6Ev6Ijhab274"
                   clientKey:@"gKXhLghjgmQCzYoKdlZcOD5fQX8Qo5j6mGkIraTQ"];
+    [PFFacebookUtils initializeFacebook];
     
     PFUser *currentUser = [PFUser currentUser];
     if (currentUser) {
@@ -125,6 +127,7 @@
 - (void)applicationDidBecomeActive:(UIApplication *)application {
     // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
     
+    [FBAppCall handleDidBecomeActiveWithSession:[PFFacebookUtils session]];
     [self setupMainViewController];
 }
 
@@ -133,6 +136,16 @@
     // Saves changes in the application's managed object context before the application terminates.
     [self saveContext];
 }
+
+- (BOOL)application:(UIApplication *)application
+            openURL:(NSURL *)url
+  sourceApplication:(NSString *)sourceApplication
+         annotation:(id)annotation {
+    return [FBAppCall handleOpenURL:url
+                  sourceApplication:sourceApplication
+                        withSession:[PFFacebookUtils session]];
+}
+
 
 #pragma mark - Core Data stack
 
