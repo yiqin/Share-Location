@@ -66,7 +66,8 @@
     
     self.dynamicsDrawerViewController = [[MSDynamicsDrawerViewController alloc] initWithNibName:nil bundle:nil];
     self.dynamicsDrawerViewController.delegate = self;
-    
+    self.dynamicsDrawerViewController.gravityMagnitude = 10.0;
+    self.dynamicsDrawerViewController.elasticity = 0.275;
     
     // Style settings
     [self.dynamicsDrawerViewController addStylersFromArray:@[[MSDynamicsDrawerScaleStyler styler], [MSDynamicsDrawerFadeStyler styler]] forDirection:MSDynamicsDrawerDirectionLeft];
