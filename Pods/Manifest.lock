@@ -25,6 +25,7 @@ PODS:
   - DateTools (1.5.0)
   - Facebook-iOS-SDK (3.23.0):
     - Bolts (~> 1.0)
+  - MSDynamicsDrawerViewController (1.5.1)
   - Parse (1.6.4):
     - Bolts (~> 1.1)
   - ParseFacebookUtils (1.6.4):
@@ -39,6 +40,7 @@ DEPENDENCIES:
   - AFNetworking
   - Colours
   - DateTools
+  - MSDynamicsDrawerViewController
   - Parse
   - ParseUI
   - SVProgressHUD (HEAD)
@@ -49,6 +51,7 @@ SPEC CHECKSUMS:
   Colours: ecbcbb168f7e6190b76b34df1b477c103cb638eb
   DateTools: 7df78f0c4719eb28cfd2d58a90fafd036e73156c
   Facebook-iOS-SDK: 3d65f685348b789e46a9aacf92bfa85b60b63755
+  MSDynamicsDrawerViewController: 0002059480a4b5ddde7eafbafb958a79a9b0ffaf
   Parse: c2610f7a12ad0defc974803b819c4efe7746e6db
   ParseFacebookUtils: 00833ccf6fec7d6429e2403fe457496a5089358b
   ParseUI: f7e9e0e5271f75a19c74ead8fdd95d36160e268e

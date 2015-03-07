@@ -5,3 +5,4 @@ pod 'Colours'
 pod 'DateTools'
 pod 'AFNetworking'
 pod 'SVProgressHUD', :head
+pod 'MSDynamicsDrawerViewController'

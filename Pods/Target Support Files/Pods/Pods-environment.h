@@ -72,6 +72,12 @@
 #define COCOAPODS_VERSION_MINOR_Facebook_iOS_SDK 23
 #define COCOAPODS_VERSION_PATCH_Facebook_iOS_SDK 0
 
+// MSDynamicsDrawerViewController
+#define COCOAPODS_POD_AVAILABLE_MSDynamicsDrawerViewController
+#define COCOAPODS_VERSION_MAJOR_MSDynamicsDrawerViewController 1
+#define COCOAPODS_VERSION_MINOR_MSDynamicsDrawerViewController 5
+#define COCOAPODS_VERSION_PATCH_MSDynamicsDrawerViewController 1
+
 // Parse
 #define COCOAPODS_POD_AVAILABLE_Parse
 #define COCOAPODS_VERSION_MAJOR_Parse 1
