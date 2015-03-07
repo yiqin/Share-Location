@@ -11,7 +11,7 @@
 		8D475C0F1AAB370200A7F60E /* CurrentUserManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D475C0E1AAB370200A7F60E /* CurrentUserManager.swift */; };
 		8D475C121AAB3CB900A7F60E /* TestAnvilLocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D475C111AAB3CB900A7F60E /* TestAnvilLocationManager.swift */; };
 		8D475C141AAB4ABB00A7F60E /* NSParseObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D475C131AAB4ABB00A7F60E /* NSParseObject.swift */; };
-		8D475C2F1AAB59A500A7F60E /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D475C2E1AAB59A500A7F60E /* MainViewController.m */; };
+		8D475C2F1AAB59A500A7F60E /* ObjectiveC_MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D475C2E1AAB59A500A7F60E /* ObjectiveC_MainViewController.m */; };
 		8D475C321AAB59CB00A7F60E /* LeftViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D475C311AAB59CB00A7F60E /* LeftViewController.m */; };
 		8D475C351AAB59DE00A7F60E /* RightViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D475C341AAB59DE00A7F60E /* RightViewController.m */; };
 		8D475C4D1AAB75C200A7F60E /* MainNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D475C4C1AAB75C200A7F60E /* MainNavigationController.m */; };
@@ -34,6 +34,8 @@
 		8D475CCC1AAB8D0700A7F60E /* TestAnvilUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D475CCB1AAB8D0700A7F60E /* TestAnvilUser.m */; };
 		8D475CCF1AAB8D5000A7F60E /* TestAnvilImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D475CCE1AAB8D5000A7F60E /* TestAnvilImage.m */; };
 		8D475CD11AABA5AB00A7F60E /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D475CD01AABA5AB00A7F60E /* MapKit.framework */; };
+		8D475CD31AABA63C00A7F60E /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D475CD21AABA63C00A7F60E /* MainViewController.swift */; };
+		8D475CD51AABA6A700A7F60E /* InfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D475CD41AABA6A700A7F60E /* InfoView.swift */; };
 		8DB684DB1AAAA85800AB441C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DB684DA1AAAA85800AB441C /* main.m */; };
 		8DB684DE1AAAA85800AB441C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DB684DD1AAAA85800AB441C /* AppDelegate.m */; };
 		8DB684E11AAAA85800AB441C /* TestAnvil.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8DB684DF1AAAA85800AB441C /* TestAnvil.xcdatamodeld */; };
@@ -41,7 +43,6 @@
 		8DB684E91AAAA85800AB441C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8DB684E81AAAA85800AB441C /* Images.xcassets */; };
 		8DB684EC1AAAA85800AB441C /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8DB684EA1AAAA85800AB441C /* LaunchScreen.xib */; };
 		8DB684F81AAAA85800AB441C /* TestAnvilTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DB684F71AAAA85800AB441C /* TestAnvilTests.m */; };
-		8DB685031AAAA87200AB441C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DB685021AAAA87200AB441C /* ViewController.swift */; };
 		8DB685051AAAA8D500AB441C /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8DB685041AAAA8D500AB441C /* CoreLocation.framework */; };
 /* End PBXBuildFile section */
 
@@ -61,8 +62,8 @@
 		8D475C0E1AAB370200A7F60E /* CurrentUserManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrentUserManager.swift; sourceTree = "<group>"; };
 		8D475C111AAB3CB900A7F60E /* TestAnvilLocationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestAnvilLocationManager.swift; sourceTree = "<group>"; };
 		8D475C131AAB4ABB00A7F60E /* NSParseObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSParseObject.swift; sourceTree = "<group>"; };
-		8D475C2D1AAB59A500A7F60E /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
-		8D475C2E1AAB59A500A7F60E /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		8D475C2D1AAB59A500A7F60E /* ObjectiveC_MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ObjectiveC_MainViewController.h; sourceTree = "<group>"; };
+		8D475C2E1AAB59A500A7F60E /* ObjectiveC_MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ObjectiveC_MainViewController.m; sourceTree = "<group>"; };
 		8D475C301AAB59CB00A7F60E /* LeftViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LeftViewController.h; sourceTree = "<group>"; };
 		8D475C311AAB59CB00A7F60E /* LeftViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LeftViewController.m; sourceTree = "<group>"; };
 		8D475C331AAB59DE00A7F60E /* RightViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RightViewController.h; sourceTree = "<group>"; };
@@ -94,6 +95,8 @@
 		8D475CCD1AAB8D5000A7F60E /* TestAnvilImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestAnvilImage.h; sourceTree = "<group>"; };
 		8D475CCE1AAB8D5000A7F60E /* TestAnvilImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestAnvilImage.m; sourceTree = "<group>"; };
 		8D475CD01AABA5AB00A7F60E /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		8D475CD21AABA63C00A7F60E /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		8D475CD41AABA6A700A7F60E /* InfoView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfoView.swift; sourceTree = "<group>"; };
 		8DB684D51AAAA85800AB441C /* TestAnvil.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestAnvil.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8DB684D91AAAA85800AB441C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8DB684DA1AAAA85800AB441C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -107,7 +110,6 @@
 		8DB684F61AAAA85800AB441C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8DB684F71AAAA85800AB441C /* TestAnvilTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestAnvilTests.m; sourceTree = "<group>"; };
 		8DB685011AAAA87200AB441C /* TestAnvil-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TestAnvil-Bridging-Header.h"; sourceTree = "<group>"; };
-		8DB685021AAAA87200AB441C /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		8DB685041AAAA8D500AB441C /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		FB26C1DF686E05DEF7C6E807 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -222,11 +224,12 @@
 			children = (
 				8DB684DC1AAAA85800AB441C /* AppDelegate.h */,
 				8DB684DD1AAAA85800AB441C /* AppDelegate.m */,
-				8DB685021AAAA87200AB441C /* ViewController.swift */,
 				8D475C4B1AAB75C200A7F60E /* MainNavigationController.h */,
 				8D475C4C1AAB75C200A7F60E /* MainNavigationController.m */,
-				8D475C2D1AAB59A500A7F60E /* MainViewController.h */,
-				8D475C2E1AAB59A500A7F60E /* MainViewController.m */,
+				8D475CD21AABA63C00A7F60E /* MainViewController.swift */,
+				8D475CD41AABA6A700A7F60E /* InfoView.swift */,
+				8D475C2D1AAB59A500A7F60E /* ObjectiveC_MainViewController.h */,
+				8D475C2E1AAB59A500A7F60E /* ObjectiveC_MainViewController.m */,
 				8D475C301AAB59CB00A7F60E /* LeftViewController.h */,
 				8D475C311AAB59CB00A7F60E /* LeftViewController.m */,
 				8D475CC41AAB840700A7F60E /* LeftTableViewCell */,
@@ -440,11 +443,12 @@
 				8DB684DE1AAAA85800AB441C /* AppDelegate.m in Sources */,
 				8D475CBD1AAB7F6000A7F60E /* LeadingBoardTableViewCell.m in Sources */,
 				8D475C0F1AAB370200A7F60E /* CurrentUserManager.swift in Sources */,
+				8D475CD31AABA63C00A7F60E /* MainViewController.swift in Sources */,
 				8DB684E11AAAA85800AB441C /* TestAnvil.xcdatamodeld in Sources */,
-				8D475C2F1AAB59A500A7F60E /* MainViewController.m in Sources */,
+				8D475C2F1AAB59A500A7F60E /* ObjectiveC_MainViewController.m in Sources */,
+				8D475CD51AABA6A700A7F60E /* InfoView.swift in Sources */,
 				8D475C351AAB59DE00A7F60E /* RightViewController.m in Sources */,
 				8D475CC31AAB7FE400A7F60E /* CityBoardTableViewCell.m in Sources */,
-				8DB685031AAAA87200AB441C /* ViewController.swift in Sources */,
 				8DB684DB1AAAA85800AB441C /* main.m in Sources */,
 				8D475CBA1AAB7F1200A7F60E /* TestAnvilTableViewCell.m in Sources */,
 				8D475CC91AAB866300A7F60E /* LeftDataManager.m in Sources */,

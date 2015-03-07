@@ -15,7 +15,6 @@
 #import "MSDynamicsDrawerStyler.h"
 
 #import "MainNavigationController.h"
-#import "MainViewController.h"
 #import "LeftViewController.h"
 #import "RightViewController.h"
 
@@ -77,8 +76,8 @@
     
     self.dynamicsDrawerViewController = [[MSDynamicsDrawerViewController alloc] initWithNibName:nil bundle:nil];
     self.dynamicsDrawerViewController.delegate = self;
-    self.dynamicsDrawerViewController.gravityMagnitude = 13.0;
-    self.dynamicsDrawerViewController.elasticity = 0.05;
+    self.dynamicsDrawerViewController.gravityMagnitude = 10.0;
+    self.dynamicsDrawerViewController.elasticity = 0.2;
     
     // Style settings
     [self.dynamicsDrawerViewController addStylersFromArray:@[[MSDynamicsDrawerScaleStyler styler], [MSDynamicsDrawerFadeStyler styler]] forDirection:MSDynamicsDrawerDirectionLeft];

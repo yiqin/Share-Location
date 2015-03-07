@@ -6,16 +6,16 @@
 //  Copyright (c) 2015 Yi Qin. All rights reserved.
 //
 
-#import "MainViewController.h"
+#import "ObjectiveC_MainViewController.h"
 
 #import <Colours.h>
 #import <TTTAttributedLabel.h>
 
-@interface MainViewController ()
+@interface ObjectiveC_MainViewController ()
 
 @end
 
-@implementation MainViewController
+@implementation ObjectiveC_MainViewController
 
 -(instancetype)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
     self = [super initWithNibName:nil bundle:nil];

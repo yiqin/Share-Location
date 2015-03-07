@@ -10,7 +10,7 @@
 
 
 
-@interface MainViewController : UIViewController
+@interface ObjectiveC_MainViewController : UIViewController
 
 
 
