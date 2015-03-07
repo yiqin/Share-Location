@@ -21,8 +21,11 @@ class CurrentUserManager: NSObject {
     }
     
     func updateCurrentGeopoint(currentGeoPoint:PFGeoPoint){
-        self.currentGeoPoint = currentGeoPoint
-        self .saveCurrentGeopointToParse()
+        if (PFUser.currentUser() != nil) {
+            self.currentGeoPoint = currentGeoPoint
+            self.saveCurrentGeopointToParse()
+        }
+        
     }
     
     func saveCurrentGeopointToParse() {

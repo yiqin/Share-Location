@@ -47,6 +47,7 @@
                   clientKey:@"gKXhLghjgmQCzYoKdlZcOD5fQX8Qo5j6mGkIraTQ"];
     [PFFacebookUtils initializeFacebook];
     
+    /*
     PFUser *currentUser = [PFUser currentUser];
     if (currentUser) {
         // do stuff with the user
@@ -62,7 +63,7 @@
             }
         }];
     }
-    
+    */
     
     
     [[TestAnvilLocationManager sharedInstance] startLocationManager];

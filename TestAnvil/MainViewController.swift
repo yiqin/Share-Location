@@ -19,6 +19,11 @@ class MainViewController: UIViewController {
     override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: NSBundle?) {
         super.init(nibName: nil, bundle: nil)
         self.view.backgroundColor = UIColor.whiteColor()
+        
+        
+        
+        var b = UIBarButtonItem(title: "Login", style: .Plain, target: self, action: "pressLogin")
+        self.navigationItem.rightBarButtonItem = b
     }
 
     required init(coder aDecoder: NSCoder) {
@@ -49,6 +54,16 @@ class MainViewController: UIViewController {
         infoView.autoresizingMask = UIViewAutoresizing.FlexibleTopMargin | UIViewAutoresizing.FlexibleWidth
         view.addSubview(infoView)
         
+        
+        
+    }
+    
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+        // Dispose of any resources that can be recreated.
+    }
+
+    func pressLogin() {
         PFFacebookUtils.logInWithPermissions(nil, {
             (user: PFUser!, error: NSError!) -> Void in
             if let user = user {
@@ -61,13 +76,6 @@ class MainViewController: UIViewController {
                 println("Uh oh. The user cancelled the Facebook login.")
             }
         })
-        
     }
-    
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-
 
 }
