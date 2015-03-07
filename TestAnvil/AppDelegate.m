@@ -19,6 +19,7 @@
 #import "LeftViewController.h"
 #import "RightViewController.h"
 
+#import "LeftDataManager.h"
 
 @interface AppDelegate () <MSDynamicsDrawerViewControllerDelegate>
 
@@ -64,8 +65,19 @@
     
     
     [[TestAnvilLocationManager sharedInstance] startLocationManager];
+    [[LeftDataManager sharedManager] loadLeadingDataWithSuccess:^(NSArray *array, NSError *error) {
+        
+    } failure:^{
+        
+    }];
     
     
+    
+    
+    return YES;
+}
+
+- (void)setupMainViewController {
     
     self.dynamicsDrawerViewController = [[MSDynamicsDrawerViewController alloc] initWithNibName:nil bundle:nil];
     self.dynamicsDrawerViewController.delegate = self;
@@ -101,11 +113,6 @@
     self.window.backgroundColor = [UIColor yellowColor];
     // [self.window addSubview:self.windowBackground];
     // [self.window sendSubviewToBack:self.windowBackground];
-    
-    
-    
-    
-    return YES;
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application {
@@ -124,6 +131,8 @@
 
 - (void)applicationDidBecomeActive:(UIApplication *)application {
     // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
+    
+    [self setupMainViewController];
 }
 
 - (void)applicationWillTerminate:(UIApplication *)application {

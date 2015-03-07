@@ -7,7 +7,6 @@
 //
 
 #import "LeftDataManager.h"
-#import "PFGeoPoint.h"
 
 @interface LeftDataManager ()
 
@@ -47,18 +46,32 @@
     return self;
 }
 
-- (void)LoadLeadingDataWithSuccess:(void (^)(NSArray *array, NSError *error))successCompletion
+- (void)loadLeadingDataWithSuccess:(void (^)(NSArray *array, NSError *error))successCompletion
                            failure:(void (^)(void))failureCompletion {
+    
+    
+    PFQuery *query = [PFQuery queryWithClassName:@"_User"];
+    [query addDescendingOrder:@"moneyTotal"];
+    [query findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error) {
+        if (!error) {
+            NSLog(@"success    %lu", (unsigned long)objects.count);
+            
+        }
+        else {
+            failureCompletion();
+        }
+    }];
+    
     
 }
 
-- (void)LoadDistanceDataWithCurrentGeoPoint:(PFGeoPoint *)currentGeoPoint
+- (void)loadDistanceDataWithCurrentGeoPoint:(PFGeoPoint *)currentGeoPoint
                                     success:(void (^)(NSArray *array, NSError *error))successCompletion
                                     failure:(void (^)(void))failureCompletion {
     
 }
 
-- (void)LoadCityDataWithName:(NSString *)cityName
+- (void)loadCityDataWithName:(NSString *)cityName
                      success:(void (^)(NSArray *array, NSError *error))successCompletion
                      failure:(void (^)(void))failureCompletion {
     

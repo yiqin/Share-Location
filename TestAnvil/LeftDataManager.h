@@ -13,14 +13,14 @@
 
 +(id)sharedManager;
 
-- (void)LoadLeadingDataWithSuccess:(void (^)(NSArray *array, NSError *error))successCompletion
-                         failure:(void (^)(void))failureCompletion;
+- (void)loadLeadingDataWithSuccess:(void (^)(NSArray *array, NSError *error))successCompletion
+                           failure:(void (^)(void))failureCompletion;
 
-- (void)LoadDistanceDataWithCurrentGeoPoint:(PFGeoPoint *)currentGeoPoint
+- (void)loadDistanceDataWithCurrentGeoPoint:(PFGeoPoint *)currentGeoPoint
                                     success:(void (^)(NSArray *array, NSError *error))successCompletion
                                     failure:(void (^)(void))failureCompletion;
 
-- (void)LoadCityDataWithName:(NSString *)cityName
+- (void)loadCityDataWithName:(NSString *)cityName
                      success:(void (^)(NSArray *array, NSError *error))successCompletion
                      failure:(void (^)(void))failureCompletion;
 
