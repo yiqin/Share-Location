@@ -55,26 +55,22 @@
     
     self.dynamicsDrawerViewController = [[MSDynamicsDrawerViewController alloc] initWithNibName:nil bundle:nil];
     self.dynamicsDrawerViewController.delegate = self;
+    
+    
+    // Style settings
     [self.dynamicsDrawerViewController addStylersFromArray:@[[MSDynamicsDrawerScaleStyler styler], [MSDynamicsDrawerFadeStyler styler]] forDirection:MSDynamicsDrawerDirectionLeft];
-    [self.dynamicsDrawerViewController addStylersFromArray:@[[MSDynamicsDrawerParallaxStyler styler]] forDirection:MSDynamicsDrawerDirectionRight];
+    [self.dynamicsDrawerViewController addStylersFromArray:@[[MSDynamicsDrawerScaleStyler styler], [MSDynamicsDrawerFadeStyler styler]] forDirection:MSDynamicsDrawerDirectionRight];
     
     
     
     MainViewController *mainViewController = [[MainViewController alloc] initWithNibName:nil bundle:nil];
-    
     self.dynamicsDrawerViewController.paneViewController = mainViewController;
-    
-    
     
     LeftViewController *leftViewController = [[LeftViewController alloc] initWithNibName:nil bundle:nil];
     [self.dynamicsDrawerViewController setDrawerViewController:leftViewController forDirection:MSDynamicsDrawerDirectionLeft];
     
-    
     RightViewController *rightViewController = [[RightViewController alloc] initWithNibName:nil bundle:nil];
     [self.dynamicsDrawerViewController setDrawerViewController:rightViewController forDirection:MSDynamicsDrawerDirectionRight];
-    
-    
-    
     
     
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];

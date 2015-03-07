@@ -17,7 +17,7 @@
 -(instancetype)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
     self = [super initWithNibName:nil bundle:nil];
     if (self) {
-        
+        self.view.backgroundColor = [UIColor greenColor];
         
     }
     return self;
