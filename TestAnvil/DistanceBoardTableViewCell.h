@@ -10,4 +10,6 @@
 
 @interface DistanceBoardTableViewCell : TestAnvilTableViewCell
 
++ (CGFloat)cellHeight;
+
 @end

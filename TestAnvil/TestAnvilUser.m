@@ -10,4 +10,14 @@
 
 @implementation TestAnvilUser
 
+-(instancetype)initWithParseObject:(PFObject *)object {
+    self = [super init];
+    if (self) {
+        _screenName = [object objectForKey:@"screenName"];
+        PFFile *tempPFFile = [object objectForKey:@"profileImage"];
+        _profileImage = [[TestAnvilImage alloc] initWithPFFile:tempPFFile];
+    }
+    return self;
+}
+
 @end

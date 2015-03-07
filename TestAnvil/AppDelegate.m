@@ -65,11 +65,7 @@
     
     
     [[TestAnvilLocationManager sharedInstance] startLocationManager];
-    [[LeftDataManager sharedManager] loadLeadingDataWithSuccess:^(NSArray *array, NSError *error) {
-        
-    } failure:^{
-        
-    }];
+    
     
     
     
@@ -87,8 +83,6 @@
     // Style settings
     [self.dynamicsDrawerViewController addStylersFromArray:@[[MSDynamicsDrawerScaleStyler styler], [MSDynamicsDrawerFadeStyler styler]] forDirection:MSDynamicsDrawerDirectionLeft];
     [self.dynamicsDrawerViewController addStylersFromArray:@[[MSDynamicsDrawerScaleStyler styler], [MSDynamicsDrawerFadeStyler styler]] forDirection:MSDynamicsDrawerDirectionRight];
-    
-    
     
     
     MainViewController *mainViewController = [[MainViewController alloc] initWithNibName:nil bundle:nil];

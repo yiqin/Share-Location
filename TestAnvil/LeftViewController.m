@@ -11,9 +11,14 @@
 #import "DistanceBoardTableViewCell.h"
 #import "CityBoardTableViewCell.h"
 
+#import "LeftDataManager.h"
+#import "TestAnvilUser.h"
+
 @interface LeftViewController ()
 
 @property(nonatomic, strong) UITableView *tableView;
+
+@property(nonatomic, strong) NSMutableArray *leadingObjects;
 
 @end
 
@@ -31,6 +36,8 @@
         _tableView.delegate = self;
         
         [self.view addSubview:_tableView];
+        
+        _leadingObjects = [[NSMutableArray alloc] init];
     }
     return self;
 }
@@ -38,6 +45,18 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
+    [[LeftDataManager sharedManager] loadLeadingDataWithSuccess:^(NSArray *array, NSError *error) {
+        @synchronized(self.leadingObjects){
+            [self.leadingObjects addObjectsFromArray:array];
+            
+            NSLog(@"reload tableView");
+            [self.tableView reloadData];
+        }
+        
+    } failure:^{
+        
+    }];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -48,7 +67,7 @@
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     switch (section) {
         case 0:
-            return 5;
+            return self.leadingObjects.count;
             break;
         case 1:
             return 5;
@@ -68,13 +87,13 @@
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
     if (indexPath.section == 0) {
-        return 100;
+        return [LeadingBoardTableViewCell cellHeight];
     }
     else if (indexPath.section == 1){
-        return 100;
+        return [DistanceBoardTableViewCell cellHeight];
     }
     else {
-        return 50;
+        return [CityBoardTableViewCell cellHeight];
     }
 }
 
@@ -88,7 +107,18 @@
             cell = [[LeadingBoardTableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
         }
         
-        cell.textLabel.text = @"LeadingBoard";
+        TestAnvilUser *user = [self.leadingObjects objectAtIndex:indexPath.row];
+        
+        if (user.profileImage.isDownloaded) {
+            cell.profileImageView.image = user.profileImage.image;
+        }
+        else {
+            cell.profileImageView.image = nil;
+            [self downloadImageAndReloadCell:indexPath];
+        }
+        cell.screenNameLabel.text = user.screenName;
+        
+        // cell.textLabel.text = user.screenName;
         return cell;
     }
     else if (indexPath.section == 1) {
@@ -117,6 +147,19 @@
     }
 }
 
+- (void)downloadImageAndReloadCell:(NSIndexPath *)indexPath
+{
+    if (indexPath.section == 0) {
+        TestAnvilUser *user = [self.leadingObjects objectAtIndex:indexPath.row];
+        [user.profileImage loadImageWithSuccess:^(UIImage *image, NSError *error) {
+            NSLog(@"load image here.");
+            [self.tableView reloadRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationNone];
+        } failure:^{
+            
+        }];
+    }
+    
+}
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     

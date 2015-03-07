@@ -29,7 +29,7 @@ class CurrentUserManager: NSObject {
         PFUser.currentUser()["currentLocation"] = currentGeoPoint
         PFUser.currentUser().saveInBackgroundWithBlock { (succeeded:Bool!, error:NSError!) -> Void in
             if((succeeded) != nil){
-                println("update pfuser successfully.")
+                // println("update pfuser successfully.")
             }
         }
     }

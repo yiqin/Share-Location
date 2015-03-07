@@ -49,7 +49,7 @@ class TestAnvilLocationManager: NSObject, CLLocationManagerDelegate{
     func locationManager(manager: CLLocationManager!, didUpdateLocations locations: [AnyObject]!) {
         var location:CLLocation = locations[locations.count-1] as CLLocation
         
-        println("locations = \(locations)")
+        // println("locations = \(locations)")
         
         let currentGeoPoint = PFGeoPoint(latitude: location.coordinate.latitude, longitude: location.coordinate.longitude)
         CurrentUserManager.sharedInstance.updateCurrentGeopoint(currentGeoPoint)

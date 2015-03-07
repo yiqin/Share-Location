@@ -10,4 +10,6 @@
 
 @interface CityBoardTableViewCell : TestAnvilTableViewCell
 
++ (CGFloat)cellHeight;
+
 @end

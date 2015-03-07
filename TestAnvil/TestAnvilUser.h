@@ -7,7 +7,14 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <Parse/Parse.h>
+#import "TestAnvilImage.h"
 
 @interface TestAnvilUser : NSObject
+
+-(instancetype)initWithParseObject:(PFObject *)object;
+
+@property(nonatomic, strong) NSString *screenName;
+@property(nonatomic, strong) TestAnvilImage *profileImage;
 
 @end

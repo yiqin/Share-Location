@@ -10,4 +10,9 @@
 
 @interface LeadingBoardTableViewCell : TestAnvilTableViewCell
 
+@property(nonatomic, strong) UILabel *screenNameLabel;
+@property(nonatomic, strong) UIImageView *profileImageView;
+
++ (CGFloat)cellHeight;
+
 @end

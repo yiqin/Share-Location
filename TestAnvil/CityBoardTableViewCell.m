@@ -22,4 +22,8 @@
     // Initialization code
 }
 
++ (CGFloat)cellHeight {
+    return 78;
+}
+
 @end

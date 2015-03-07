@@ -7,6 +7,8 @@
 //
 
 #import "LeftDataManager.h"
+#import <TestAnvil-Swift.h>
+#import "TestAnvilUser.h"
 
 @interface LeftDataManager ()
 
@@ -35,7 +37,7 @@
 -(instancetype)init {
     self = [super init];
     if (self) {
-        _leadingCount = 3;
+        _leadingCount = 6;
         _distanceCount = 3;
         _cityCount = 10;
         
@@ -51,11 +53,20 @@
     
     
     PFQuery *query = [PFQuery queryWithClassName:@"_User"];
+    query.limit = self.leadingCount;
     [query addDescendingOrder:@"moneyTotal"];
     [query findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error) {
         if (!error) {
             NSLog(@"success    %lu", (unsigned long)objects.count);
             
+            @synchronized(self.leadingObjects){
+                self.leadingObjects = [[NSMutableArray alloc] init];
+                for (PFObject *object in objects) {
+                    TestAnvilUser *testAnvilUser = [[TestAnvilUser alloc] initWithParseObject:object];
+                    [self.leadingObjects addObject:testAnvilUser];
+                }
+                successCompletion([self.leadingObjects copy], nil);
+            }
         }
         else {
             failureCompletion();
