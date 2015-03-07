@@ -22,6 +22,9 @@
 		8D475C2A1AAB4EDD00A7F60E /* Lato-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8D475C1F1AAB4EDD00A7F60E /* Lato-LightItalic.ttf */; };
 		8D475C2B1AAB4EDD00A7F60E /* Lato-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8D475C201AAB4EDD00A7F60E /* Lato-Regular.ttf */; };
 		8D475C2C1AAB4EDD00A7F60E /* OFL.txt in Resources */ = {isa = PBXBuildFile; fileRef = 8D475C211AAB4EDD00A7F60E /* OFL.txt */; };
+		8D475C2F1AAB59A500A7F60E /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D475C2E1AAB59A500A7F60E /* MainViewController.m */; };
+		8D475C321AAB59CB00A7F60E /* LeftViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D475C311AAB59CB00A7F60E /* LeftViewController.m */; };
+		8D475C351AAB59DE00A7F60E /* RightViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D475C341AAB59DE00A7F60E /* RightViewController.m */; };
 		8DB684DB1AAAA85800AB441C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DB684DA1AAAA85800AB441C /* main.m */; };
 		8DB684DE1AAAA85800AB441C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DB684DD1AAAA85800AB441C /* AppDelegate.m */; };
 		8DB684E11AAAA85800AB441C /* TestAnvil.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8DB684DF1AAAA85800AB441C /* TestAnvil.xcdatamodeld */; };
@@ -60,6 +63,12 @@
 		8D475C1F1AAB4EDD00A7F60E /* Lato-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-LightItalic.ttf"; sourceTree = "<group>"; };
 		8D475C201AAB4EDD00A7F60E /* Lato-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Regular.ttf"; sourceTree = "<group>"; };
 		8D475C211AAB4EDD00A7F60E /* OFL.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = OFL.txt; sourceTree = "<group>"; };
+		8D475C2D1AAB59A500A7F60E /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		8D475C2E1AAB59A500A7F60E /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		8D475C301AAB59CB00A7F60E /* LeftViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LeftViewController.h; sourceTree = "<group>"; };
+		8D475C311AAB59CB00A7F60E /* LeftViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LeftViewController.m; sourceTree = "<group>"; };
+		8D475C331AAB59DE00A7F60E /* RightViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RightViewController.h; sourceTree = "<group>"; };
+		8D475C341AAB59DE00A7F60E /* RightViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RightViewController.m; sourceTree = "<group>"; };
 		8DB684D51AAAA85800AB441C /* TestAnvil.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestAnvil.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8DB684D91AAAA85800AB441C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8DB684DA1AAAA85800AB441C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -168,6 +177,12 @@
 				8DB684DC1AAAA85800AB441C /* AppDelegate.h */,
 				8DB684DD1AAAA85800AB441C /* AppDelegate.m */,
 				8DB685021AAAA87200AB441C /* ViewController.swift */,
+				8D475C2D1AAB59A500A7F60E /* MainViewController.h */,
+				8D475C2E1AAB59A500A7F60E /* MainViewController.m */,
+				8D475C301AAB59CB00A7F60E /* LeftViewController.h */,
+				8D475C311AAB59CB00A7F60E /* LeftViewController.m */,
+				8D475C331AAB59DE00A7F60E /* RightViewController.h */,
+				8D475C341AAB59DE00A7F60E /* RightViewController.m */,
 				8D475C151AAB4AFF00A7F60E /* DataClass */,
 				8D475C101AAB37ED00A7F60E /* DataManager */,
 				8DB684E51AAAA85800AB441C /* Main.storyboard */,
@@ -370,9 +385,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8D475C321AAB59CB00A7F60E /* LeftViewController.m in Sources */,
 				8DB684DE1AAAA85800AB441C /* AppDelegate.m in Sources */,
 				8D475C0F1AAB370200A7F60E /* CurrentUserManager.swift in Sources */,
 				8DB684E11AAAA85800AB441C /* TestAnvil.xcdatamodeld in Sources */,
+				8D475C2F1AAB59A500A7F60E /* MainViewController.m in Sources */,
+				8D475C351AAB59DE00A7F60E /* RightViewController.m in Sources */,
 				8DB685031AAAA87200AB441C /* ViewController.swift in Sources */,
 				8DB684DB1AAAA85800AB441C /* main.m in Sources */,
 				8D475C121AAB3CB900A7F60E /* TestAnvilLocationManager.swift in Sources */,
