@@ -23,6 +23,8 @@
 
 @interface AppDelegate () <MSDynamicsDrawerViewControllerDelegate>
 
+@property (nonatomic, strong) UIImageView *windowBackground;
+
 @end
 
 @implementation AppDelegate
@@ -107,8 +109,17 @@
     self.window.rootViewController = self.dynamicsDrawerViewController;
     [self.window makeKeyAndVisible];
     self.window.backgroundColor = [UIColor yellowColor];
-    // [self.window addSubview:self.windowBackground];
-    // [self.window sendSubviewToBack:self.windowBackground];
+    [self.window addSubview:self.windowBackground];
+    [self.window sendSubviewToBack:self.windowBackground];
+}
+
+- (UIImageView *)windowBackground
+{
+    if (!_windowBackground) {
+        _windowBackground = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"Window Background"]];
+        _windowBackground.contentMode =UIViewContentModeScaleAspectFill;
+    }
+    return _windowBackground;
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application {

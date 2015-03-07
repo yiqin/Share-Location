@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		61298F1A1F75918037B7191E /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 345DC219685F051F823BD06E /* libPods.a */; };
+		8D35AF151AABB53E00B42AA9 /* FacebookDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D35AF141AABB53E00B42AA9 /* FacebookDataManager.m */; };
 		8D475C0F1AAB370200A7F60E /* CurrentUserManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D475C0E1AAB370200A7F60E /* CurrentUserManager.swift */; };
 		8D475C121AAB3CB900A7F60E /* TestAnvilLocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D475C111AAB3CB900A7F60E /* TestAnvilLocationManager.swift */; };
 		8D475C141AAB4ABB00A7F60E /* NSParseObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D475C131AAB4ABB00A7F60E /* NSParseObject.swift */; };
@@ -59,6 +60,8 @@
 /* Begin PBXFileReference section */
 		30B0253E5290A18244EF2D03 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		345DC219685F051F823BD06E /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		8D35AF131AABB53E00B42AA9 /* FacebookDataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FacebookDataManager.h; sourceTree = "<group>"; };
+		8D35AF141AABB53E00B42AA9 /* FacebookDataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FacebookDataManager.m; sourceTree = "<group>"; };
 		8D475C0E1AAB370200A7F60E /* CurrentUserManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrentUserManager.swift; sourceTree = "<group>"; };
 		8D475C111AAB3CB900A7F60E /* TestAnvilLocationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestAnvilLocationManager.swift; sourceTree = "<group>"; };
 		8D475C131AAB4ABB00A7F60E /* NSParseObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSParseObject.swift; sourceTree = "<group>"; };
@@ -148,6 +151,8 @@
 			isa = PBXGroup;
 			children = (
 				8D475C0E1AAB370200A7F60E /* CurrentUserManager.swift */,
+				8D35AF131AABB53E00B42AA9 /* FacebookDataManager.h */,
+				8D35AF141AABB53E00B42AA9 /* FacebookDataManager.m */,
 				8D475C111AAB3CB900A7F60E /* TestAnvilLocationManager.swift */,
 				8D475CC71AAB866300A7F60E /* LeftDataManager.h */,
 				8D475CC81AAB866300A7F60E /* LeftDataManager.m */,
@@ -449,6 +454,7 @@
 				8D475CD51AABA6A700A7F60E /* InfoView.swift in Sources */,
 				8D475C351AAB59DE00A7F60E /* RightViewController.m in Sources */,
 				8D475CC31AAB7FE400A7F60E /* CityBoardTableViewCell.m in Sources */,
+				8D35AF151AABB53E00B42AA9 /* FacebookDataManager.m in Sources */,
 				8DB684DB1AAAA85800AB441C /* main.m in Sources */,
 				8D475CBA1AAB7F1200A7F60E /* TestAnvilTableViewCell.m in Sources */,
 				8D475CC91AAB866300A7F60E /* LeftDataManager.m in Sources */,

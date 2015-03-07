@@ -71,6 +71,8 @@ class MainViewController: UIViewController {
                     println("User signed up and logged in through Facebook!")
                 } else {
                     println("User logged in through Facebook!")
+                    FacebookDataManager.loadData()
+                    
                 }
             } else {
                 println("Uh oh. The user cancelled the Facebook login.")
