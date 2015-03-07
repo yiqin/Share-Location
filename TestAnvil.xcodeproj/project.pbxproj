@@ -7,14 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		61298F1A1F75918037B7191E /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 345DC219685F051F823BD06E /* libPods.a */; };
 		8DB684DB1AAAA85800AB441C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DB684DA1AAAA85800AB441C /* main.m */; };
 		8DB684DE1AAAA85800AB441C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DB684DD1AAAA85800AB441C /* AppDelegate.m */; };
 		8DB684E11AAAA85800AB441C /* TestAnvil.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8DB684DF1AAAA85800AB441C /* TestAnvil.xcdatamodeld */; };
-		8DB684E41AAAA85800AB441C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DB684E31AAAA85800AB441C /* ViewController.m */; };
 		8DB684E71AAAA85800AB441C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8DB684E51AAAA85800AB441C /* Main.storyboard */; };
 		8DB684E91AAAA85800AB441C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8DB684E81AAAA85800AB441C /* Images.xcassets */; };
 		8DB684EC1AAAA85800AB441C /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8DB684EA1AAAA85800AB441C /* LaunchScreen.xib */; };
 		8DB684F81AAAA85800AB441C /* TestAnvilTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DB684F71AAAA85800AB441C /* TestAnvilTests.m */; };
+		8DB685031AAAA87200AB441C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DB685021AAAA87200AB441C /* ViewController.swift */; };
+		8DB685051AAAA8D500AB441C /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8DB685041AAAA8D500AB441C /* CoreLocation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,20 +30,24 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		30B0253E5290A18244EF2D03 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		345DC219685F051F823BD06E /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		8DB684D51AAAA85800AB441C /* TestAnvil.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestAnvil.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8DB684D91AAAA85800AB441C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8DB684DA1AAAA85800AB441C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		8DB684DC1AAAA85800AB441C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		8DB684DD1AAAA85800AB441C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		8DB684E01AAAA85800AB441C /* TestAnvil.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TestAnvil.xcdatamodel; sourceTree = "<group>"; };
-		8DB684E21AAAA85800AB441C /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		8DB684E31AAAA85800AB441C /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		8DB684E61AAAA85800AB441C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8DB684E81AAAA85800AB441C /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		8DB684EB1AAAA85800AB441C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		8DB684F11AAAA85800AB441C /* TestAnvilTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestAnvilTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8DB684F61AAAA85800AB441C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8DB684F71AAAA85800AB441C /* TestAnvilTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestAnvilTests.m; sourceTree = "<group>"; };
+		8DB685011AAAA87200AB441C /* TestAnvil-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TestAnvil-Bridging-Header.h"; sourceTree = "<group>"; };
+		8DB685021AAAA87200AB441C /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		8DB685041AAAA8D500AB441C /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		FB26C1DF686E05DEF7C6E807 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,6 +55,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8DB685051AAAA8D500AB441C /* CoreLocation.framework in Frameworks */,
+				61298F1A1F75918037B7191E /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -62,12 +70,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5175C28767A85FF5E061121D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				30B0253E5290A18244EF2D03 /* Pods.debug.xcconfig */,
+				FB26C1DF686E05DEF7C6E807 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		8DB684CC1AAAA85800AB441C = {
 			isa = PBXGroup;
 			children = (
 				8DB684D71AAAA85800AB441C /* TestAnvil */,
 				8DB684F41AAAA85800AB441C /* TestAnvilTests */,
 				8DB684D61AAAA85800AB441C /* Products */,
+				5175C28767A85FF5E061121D /* Pods */,
+				DB9972C39F7A8696873DD218 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -85,13 +104,14 @@
 			children = (
 				8DB684DC1AAAA85800AB441C /* AppDelegate.h */,
 				8DB684DD1AAAA85800AB441C /* AppDelegate.m */,
-				8DB684E21AAAA85800AB441C /* ViewController.h */,
-				8DB684E31AAAA85800AB441C /* ViewController.m */,
+				8DB685021AAAA87200AB441C /* ViewController.swift */,
 				8DB684E51AAAA85800AB441C /* Main.storyboard */,
 				8DB684E81AAAA85800AB441C /* Images.xcassets */,
 				8DB684EA1AAAA85800AB441C /* LaunchScreen.xib */,
 				8DB684DF1AAAA85800AB441C /* TestAnvil.xcdatamodeld */,
+				8DB685061AAAAFA000AB441C /* Frameworks */,
 				8DB684D81AAAA85800AB441C /* Supporting Files */,
+				8DB685011AAAA87200AB441C /* TestAnvil-Bridging-Header.h */,
 			);
 			path = TestAnvil;
 			sourceTree = "<group>";
@@ -122,6 +142,22 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		8DB685061AAAAFA000AB441C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8DB685041AAAA8D500AB441C /* CoreLocation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DB9972C39F7A8696873DD218 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				345DC219685F051F823BD06E /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -129,9 +165,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8DB684FB1AAAA85800AB441C /* Build configuration list for PBXNativeTarget "TestAnvil" */;
 			buildPhases = (
+				ADBBCB8A7E97BC633320835A /* Check Pods Manifest.lock */,
 				8DB684D11AAAA85800AB441C /* Sources */,
 				8DB684D21AAAA85800AB441C /* Frameworks */,
 				8DB684D31AAAA85800AB441C /* Resources */,
+				1C30C0731C9664C09673E974 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -217,6 +255,39 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1C30C0731C9664C09673E974 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		ADBBCB8A7E97BC633320835A /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		8DB684D11AAAA85800AB441C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -224,7 +295,7 @@
 			files = (
 				8DB684DE1AAAA85800AB441C /* AppDelegate.m in Sources */,
 				8DB684E11AAAA85800AB441C /* TestAnvil.xcdatamodeld in Sources */,
-				8DB684E41AAAA85800AB441C /* ViewController.m in Sources */,
+				8DB685031AAAA87200AB441C /* ViewController.swift in Sources */,
 				8DB684DB1AAAA85800AB441C /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -347,21 +418,32 @@
 		};
 		8DB684FC1AAAA85800AB441C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 30B0253E5290A18244EF2D03 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = TestAnvil/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "TestAnvil/TestAnvil-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
 		8DB684FD1AAAA85800AB441C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FB26C1DF686E05DEF7C6E807 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = TestAnvil/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "TestAnvil/TestAnvil-Bridging-Header.h";
 			};
 			name = Release;
 		};
@@ -378,6 +460,7 @@
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = TestAnvilTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TestAnvil.app/TestAnvil";
@@ -393,6 +476,7 @@
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = TestAnvilTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TestAnvil.app/TestAnvil";
@@ -418,6 +502,7 @@
 				8DB684FD1AAAA85800AB441C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8DB684FE1AAAA85800AB441C /* Build configuration list for PBXNativeTarget "TestAnvilTests" */ = {
 			isa = XCConfigurationList;
@@ -426,6 +511,7 @@
 				8DB685001AAAA85800AB441C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
