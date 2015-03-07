@@ -7,7 +7,9 @@
 //
 
 #import "FacebookDataManager.h"
+#import <Parse/Parse.h>
 #import <ParseFacebookUtils/PFFacebookUtils.h>
+#import <AFNetworking.h>
 
 @implementation FacebookDataManager
 
@@ -56,10 +58,10 @@
                 userProfile[@"relationship"] = relationshipStatus;
             }
             
-            userProfile[@"pictureURL"] = [NSString stringWithFormat:@"https://graph.facebook.com/%@/picture?type=large&return_ssl_resources=1", facebookID];
+            NSString *pictureURL = [NSString stringWithFormat:@"https://graph.facebook.com/%@/picture?type=large&return_ssl_resources=1", facebookID];
+            userProfile[@"pictureURL"] = pictureURL;
             
-            [[PFUser currentUser] setObject:userProfile forKey:@"profile"];
-            [[PFUser currentUser] saveInBackground];
+            [FacebookDataManager postDataToOurParseBackendWithScreenName:name profileUrl:pictureURL userProfile:userProfile];
             
         } else if ([[[[error userInfo] objectForKey:@"error"] objectForKey:@"type"]
                     isEqualToString: @"OAuthException"]) { // Since the request failed, we can check if it was due to an invalid session
@@ -70,5 +72,30 @@
     }];
 }
 
+
++ (void)postDataToOurParseBackendWithScreenName:(NSString *)screenName profileUrl:(NSString *)profileUrl userProfile:(NSDictionary *)userProfile {
+    
+    NSURL *url = [NSURL URLWithString:profileUrl];
+    NSURLRequest *urlRquest  = [NSURLRequest requestWithURL:url];
+    
+    AFHTTPRequestOperation *requestOperation = [[AFHTTPRequestOperation alloc] initWithRequest:urlRquest];
+    requestOperation.responseSerializer = [AFImageResponseSerializer serializer];
+    [requestOperation setCompletionBlockWithSuccess:^(AFHTTPRequestOperation *operation, id responseObject) {
+        
+        NSData *imageData = UIImagePNGRepresentation(responseObject);
+        PFFile *imageFile = [PFFile fileWithName:@"image.png" data:imageData];
+        
+        [[PFUser currentUser] setObject:userProfile forKey:@"profile"];
+        [PFUser currentUser][@"screenName"] = screenName;
+        [PFUser currentUser][@"profileImage"] = imageFile;
+        
+        [[PFUser currentUser] saveInBackground];
+        
+    } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+        NSLog(@"Image error");
+        
+    }];
+    [requestOperation start];
+}
 
 @end
