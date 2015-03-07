@@ -10,7 +10,15 @@
 #import <Parse/Parse.h>
 #import <TestAnvil-Swift.h>
 
-@interface AppDelegate ()
+#import "MSDynamicsDrawerViewController.h"
+#import "MSDynamicsDrawerStyler.h"
+
+#import "MainViewController.h"
+#import "LeftViewController.h"
+#import "RightViewController.h"
+
+
+@interface AppDelegate () <MSDynamicsDrawerViewControllerDelegate>
 
 @end
 
@@ -44,6 +52,37 @@
     
     
     [[TestAnvilLocationManager sharedInstance] startLocationManager];
+    
+    self.dynamicsDrawerViewController = [[MSDynamicsDrawerViewController alloc] initWithNibName:nil bundle:nil];
+    self.dynamicsDrawerViewController.delegate = self;
+    [self.dynamicsDrawerViewController addStylersFromArray:@[[MSDynamicsDrawerScaleStyler styler], [MSDynamicsDrawerFadeStyler styler]] forDirection:MSDynamicsDrawerDirectionLeft];
+    [self.dynamicsDrawerViewController addStylersFromArray:@[[MSDynamicsDrawerParallaxStyler styler]] forDirection:MSDynamicsDrawerDirectionRight];
+    
+    
+    
+    MainViewController *mainViewController = [[MainViewController alloc] initWithNibName:nil bundle:nil];
+    
+    self.dynamicsDrawerViewController.paneViewController = mainViewController;
+    
+    
+    
+    LeftViewController *leftViewController = [[LeftViewController alloc] initWithNibName:nil bundle:nil];
+    [self.dynamicsDrawerViewController setDrawerViewController:leftViewController forDirection:MSDynamicsDrawerDirectionLeft];
+    
+    
+    RightViewController *rightViewController = [[RightViewController alloc] initWithNibName:nil bundle:nil];
+    [self.dynamicsDrawerViewController setDrawerViewController:rightViewController forDirection:MSDynamicsDrawerDirectionRight];
+    
+    
+    
+    
+    
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    self.window.rootViewController = self.dynamicsDrawerViewController;
+    [self.window makeKeyAndVisible];
+    self.window.backgroundColor = [UIColor yellowColor];
+    // [self.window addSubview:self.windowBackground];
+    // [self.window sendSubviewToBack:self.windowBackground];
     
     
     
@@ -153,6 +192,49 @@
             abort();
         }
     }
+}
+
+
+- (NSString *)descriptionForPaneState:(MSDynamicsDrawerPaneState)paneState
+{
+    switch (paneState) {
+        case MSDynamicsDrawerPaneStateOpen:
+            return @"MSDynamicsDrawerPaneStateOpen";
+        case MSDynamicsDrawerPaneStateClosed:
+            return @"MSDynamicsDrawerPaneStateClosed";
+        case MSDynamicsDrawerPaneStateOpenWide:
+            return @"MSDynamicsDrawerPaneStateOpenWide";
+        default:
+            return nil;
+    }
+}
+
+- (NSString *)descriptionForDirection:(MSDynamicsDrawerDirection)direction
+{
+    switch (direction) {
+        case MSDynamicsDrawerDirectionTop:
+            return @"MSDynamicsDrawerDirectionTop";
+        case MSDynamicsDrawerDirectionLeft:
+            return @"MSDynamicsDrawerDirectionLeft";
+        case MSDynamicsDrawerDirectionBottom:
+            return @"MSDynamicsDrawerDirectionBottom";
+        case MSDynamicsDrawerDirectionRight:
+            return @"MSDynamicsDrawerDirectionRight";
+        default:
+            return nil;
+    }
+}
+
+#pragma mark - MSDynamicsDrawerViewControllerDelegate
+
+- (void)dynamicsDrawerViewController:(MSDynamicsDrawerViewController *)drawerViewController mayUpdateToPaneState:(MSDynamicsDrawerPaneState)paneState forDirection:(MSDynamicsDrawerDirection)direction
+{
+    NSLog(@"Drawer view controller may update to state `%@` for direction `%@`", [self descriptionForPaneState:paneState], [self descriptionForDirection:direction]);
+}
+
+- (void)dynamicsDrawerViewController:(MSDynamicsDrawerViewController *)drawerViewController didUpdateToPaneState:(MSDynamicsDrawerPaneState)paneState forDirection:(MSDynamicsDrawerDirection)direction
+{
+    NSLog(@"Drawer view controller did update to state `%@` for direction `%@`", [self descriptionForPaneState:paneState], [self descriptionForDirection:direction]);
 }
 
 @end

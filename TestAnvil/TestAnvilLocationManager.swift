@@ -53,11 +53,14 @@ class TestAnvilLocationManager: NSObject, CLLocationManagerDelegate{
         
         // Post HTTTP request....
         
+        /*
         var object = PFObject(className: "test")
         object["title"] = "this is a test."
         object.saveInBackgroundWithBlock { (success:Bool!, error:NSError!) -> Void in
             println("save this is a test.")
         }
+        */
+        
         
     }
     
