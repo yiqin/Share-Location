@@ -33,6 +33,7 @@
 		8D475CC91AAB866300A7F60E /* LeftDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D475CC81AAB866300A7F60E /* LeftDataManager.m */; };
 		8D475CCC1AAB8D0700A7F60E /* TestAnvilUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D475CCB1AAB8D0700A7F60E /* TestAnvilUser.m */; };
 		8D475CCF1AAB8D5000A7F60E /* TestAnvilImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D475CCE1AAB8D5000A7F60E /* TestAnvilImage.m */; };
+		8D475CD11AABA5AB00A7F60E /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D475CD01AABA5AB00A7F60E /* MapKit.framework */; };
 		8DB684DB1AAAA85800AB441C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DB684DA1AAAA85800AB441C /* main.m */; };
 		8DB684DE1AAAA85800AB441C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DB684DD1AAAA85800AB441C /* AppDelegate.m */; };
 		8DB684E11AAAA85800AB441C /* TestAnvil.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8DB684DF1AAAA85800AB441C /* TestAnvil.xcdatamodeld */; };
@@ -92,6 +93,7 @@
 		8D475CCB1AAB8D0700A7F60E /* TestAnvilUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestAnvilUser.m; sourceTree = "<group>"; };
 		8D475CCD1AAB8D5000A7F60E /* TestAnvilImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestAnvilImage.h; sourceTree = "<group>"; };
 		8D475CCE1AAB8D5000A7F60E /* TestAnvilImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestAnvilImage.m; sourceTree = "<group>"; };
+		8D475CD01AABA5AB00A7F60E /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		8DB684D51AAAA85800AB441C /* TestAnvil.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestAnvil.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8DB684D91AAAA85800AB441C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8DB684DA1AAAA85800AB441C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -115,6 +117,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8D475CD11AABA5AB00A7F60E /* MapKit.framework in Frameworks */,
 				8DB685051AAAA8D500AB441C /* CoreLocation.framework in Frameworks */,
 				61298F1A1F75918037B7191E /* libPods.a in Frameworks */,
 			);
@@ -280,6 +283,7 @@
 		DB9972C39F7A8696873DD218 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				8D475CD01AABA5AB00A7F60E /* MapKit.framework */,
 				345DC219685F051F823BD06E /* libPods.a */,
 			);
 			name = Frameworks;
