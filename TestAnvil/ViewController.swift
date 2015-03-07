@@ -20,11 +20,10 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
         
         
         myLocationManager.delegate = self;
-        myLocationManager.pausesLocationUpdatesAutomatically = true
-        myLocationManager.activityType = CLActivityType.AutomotiveNavigation
-        
+        myLocationManager.pausesLocationUpdatesAutomatically = false
+        myLocationManager.activityType = CLActivityType.Fitness
+        myLocationManager.distanceFilter = kCLDistanceFilterNone
         myLocationManager.desiredAccuracy = kCLLocationAccuracyBest
-        
         
         let status = CLLocationManager.authorizationStatus()
         
