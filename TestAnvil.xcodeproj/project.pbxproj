@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		61298F1A1F75918037B7191E /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 345DC219685F051F823BD06E /* libPods.a */; };
 		8D475C0F1AAB370200A7F60E /* CurrentUserManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D475C0E1AAB370200A7F60E /* CurrentUserManager.swift */; };
+		8D475C121AAB3CB900A7F60E /* TestAnvilLocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D475C111AAB3CB900A7F60E /* TestAnvilLocationManager.swift */; };
 		8DB684DB1AAAA85800AB441C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DB684DA1AAAA85800AB441C /* main.m */; };
 		8DB684DE1AAAA85800AB441C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DB684DD1AAAA85800AB441C /* AppDelegate.m */; };
 		8DB684E11AAAA85800AB441C /* TestAnvil.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8DB684DF1AAAA85800AB441C /* TestAnvil.xcdatamodeld */; };
@@ -34,6 +35,7 @@
 		30B0253E5290A18244EF2D03 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		345DC219685F051F823BD06E /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D475C0E1AAB370200A7F60E /* CurrentUserManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrentUserManager.swift; sourceTree = "<group>"; };
+		8D475C111AAB3CB900A7F60E /* TestAnvilLocationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestAnvilLocationManager.swift; sourceTree = "<group>"; };
 		8DB684D51AAAA85800AB441C /* TestAnvil.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestAnvil.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8DB684D91AAAA85800AB441C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8DB684DA1AAAA85800AB441C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -85,6 +87,7 @@
 			isa = PBXGroup;
 			children = (
 				8D475C0E1AAB370200A7F60E /* CurrentUserManager.swift */,
+				8D475C111AAB3CB900A7F60E /* TestAnvilLocationManager.swift */,
 			);
 			name = DataManager;
 			sourceTree = "<group>";
@@ -309,6 +312,7 @@
 				8DB684E11AAAA85800AB441C /* TestAnvil.xcdatamodeld in Sources */,
 				8DB685031AAAA87200AB441C /* ViewController.swift in Sources */,
 				8DB684DB1AAAA85800AB441C /* main.m in Sources */,
+				8D475C121AAB3CB900A7F60E /* TestAnvilLocationManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

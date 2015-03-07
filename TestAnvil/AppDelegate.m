@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import <Parse/Parse.h>
+#import <TestAnvil-Swift.h>
 
 @interface AppDelegate ()
 
@@ -38,6 +39,8 @@
             }
         }];
     }
+    
+    [[TestAnvilLocationManager sharedInstance] startLocationManager];
     
     
     return YES;
