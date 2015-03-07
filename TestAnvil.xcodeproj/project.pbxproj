@@ -25,6 +25,16 @@
 		8D475C2F1AAB59A500A7F60E /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D475C2E1AAB59A500A7F60E /* MainViewController.m */; };
 		8D475C321AAB59CB00A7F60E /* LeftViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D475C311AAB59CB00A7F60E /* LeftViewController.m */; };
 		8D475C351AAB59DE00A7F60E /* RightViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D475C341AAB59DE00A7F60E /* RightViewController.m */; };
+		8D475C411AAB621A00A7F60E /* OpenSans-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8D475C371AAB621A00A7F60E /* OpenSans-Bold.ttf */; };
+		8D475C421AAB621A00A7F60E /* OpenSans-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8D475C381AAB621A00A7F60E /* OpenSans-BoldItalic.ttf */; };
+		8D475C431AAB621A00A7F60E /* OpenSans-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8D475C391AAB621A00A7F60E /* OpenSans-ExtraBold.ttf */; };
+		8D475C441AAB621A00A7F60E /* OpenSans-ExtraBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8D475C3A1AAB621A00A7F60E /* OpenSans-ExtraBoldItalic.ttf */; };
+		8D475C451AAB621A00A7F60E /* OpenSans-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8D475C3B1AAB621A00A7F60E /* OpenSans-Italic.ttf */; };
+		8D475C461AAB621A00A7F60E /* OpenSans-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8D475C3C1AAB621A00A7F60E /* OpenSans-Light.ttf */; };
+		8D475C471AAB621A00A7F60E /* OpenSans-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8D475C3D1AAB621A00A7F60E /* OpenSans-LightItalic.ttf */; };
+		8D475C481AAB621A00A7F60E /* OpenSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8D475C3E1AAB621A00A7F60E /* OpenSans-Regular.ttf */; };
+		8D475C491AAB621A00A7F60E /* OpenSans-Semibold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8D475C3F1AAB621A00A7F60E /* OpenSans-Semibold.ttf */; };
+		8D475C4A1AAB621A00A7F60E /* OpenSans-SemiboldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8D475C401AAB621A00A7F60E /* OpenSans-SemiboldItalic.ttf */; };
 		8DB684DB1AAAA85800AB441C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DB684DA1AAAA85800AB441C /* main.m */; };
 		8DB684DE1AAAA85800AB441C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DB684DD1AAAA85800AB441C /* AppDelegate.m */; };
 		8DB684E11AAAA85800AB441C /* TestAnvil.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8DB684DF1AAAA85800AB441C /* TestAnvil.xcdatamodeld */; };
@@ -69,6 +79,16 @@
 		8D475C311AAB59CB00A7F60E /* LeftViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LeftViewController.m; sourceTree = "<group>"; };
 		8D475C331AAB59DE00A7F60E /* RightViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RightViewController.h; sourceTree = "<group>"; };
 		8D475C341AAB59DE00A7F60E /* RightViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RightViewController.m; sourceTree = "<group>"; };
+		8D475C371AAB621A00A7F60E /* OpenSans-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Bold.ttf"; sourceTree = "<group>"; };
+		8D475C381AAB621A00A7F60E /* OpenSans-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-BoldItalic.ttf"; sourceTree = "<group>"; };
+		8D475C391AAB621A00A7F60E /* OpenSans-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-ExtraBold.ttf"; sourceTree = "<group>"; };
+		8D475C3A1AAB621A00A7F60E /* OpenSans-ExtraBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-ExtraBoldItalic.ttf"; sourceTree = "<group>"; };
+		8D475C3B1AAB621A00A7F60E /* OpenSans-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Italic.ttf"; sourceTree = "<group>"; };
+		8D475C3C1AAB621A00A7F60E /* OpenSans-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Light.ttf"; sourceTree = "<group>"; };
+		8D475C3D1AAB621A00A7F60E /* OpenSans-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-LightItalic.ttf"; sourceTree = "<group>"; };
+		8D475C3E1AAB621A00A7F60E /* OpenSans-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Regular.ttf"; sourceTree = "<group>"; };
+		8D475C3F1AAB621A00A7F60E /* OpenSans-Semibold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Semibold.ttf"; sourceTree = "<group>"; };
+		8D475C401AAB621A00A7F60E /* OpenSans-SemiboldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-SemiboldItalic.ttf"; sourceTree = "<group>"; };
 		8DB684D51AAAA85800AB441C /* TestAnvil.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestAnvil.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8DB684D91AAAA85800AB441C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8DB684DA1AAAA85800AB441C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -151,6 +171,23 @@
 			path = Lato;
 			sourceTree = "<group>";
 		};
+		8D475C361AAB621A00A7F60E /* Open_Sans */ = {
+			isa = PBXGroup;
+			children = (
+				8D475C371AAB621A00A7F60E /* OpenSans-Bold.ttf */,
+				8D475C381AAB621A00A7F60E /* OpenSans-BoldItalic.ttf */,
+				8D475C391AAB621A00A7F60E /* OpenSans-ExtraBold.ttf */,
+				8D475C3A1AAB621A00A7F60E /* OpenSans-ExtraBoldItalic.ttf */,
+				8D475C3B1AAB621A00A7F60E /* OpenSans-Italic.ttf */,
+				8D475C3C1AAB621A00A7F60E /* OpenSans-Light.ttf */,
+				8D475C3D1AAB621A00A7F60E /* OpenSans-LightItalic.ttf */,
+				8D475C3E1AAB621A00A7F60E /* OpenSans-Regular.ttf */,
+				8D475C3F1AAB621A00A7F60E /* OpenSans-Semibold.ttf */,
+				8D475C401AAB621A00A7F60E /* OpenSans-SemiboldItalic.ttf */,
+			);
+			path = Open_Sans;
+			sourceTree = "<group>";
+		};
 		8DB684CC1AAAA85800AB441C = {
 			isa = PBXGroup;
 			children = (
@@ -200,6 +237,7 @@
 			isa = PBXGroup;
 			children = (
 				8D475C161AAB4EDD00A7F60E /* Lato */,
+				8D475C361AAB621A00A7F60E /* Open_Sans */,
 				8DB684D91AAAA85800AB441C /* Info.plist */,
 				8DB684DA1AAAA85800AB441C /* main.m */,
 			);
@@ -322,6 +360,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				8D475C2C1AAB4EDD00A7F60E /* OFL.txt in Resources */,
+				8D475C441AAB621A00A7F60E /* OpenSans-ExtraBoldItalic.ttf in Resources */,
+				8D475C471AAB621A00A7F60E /* OpenSans-LightItalic.ttf in Resources */,
 				8D475C281AAB4EDD00A7F60E /* Lato-Italic.ttf in Resources */,
 				8D475C221AAB4EDD00A7F60E /* Lato-Black.ttf in Resources */,
 				8D475C241AAB4EDD00A7F60E /* Lato-Bold.ttf in Resources */,
@@ -329,11 +369,19 @@
 				8DB684E71AAAA85800AB441C /* Main.storyboard in Resources */,
 				8D475C231AAB4EDD00A7F60E /* Lato-BlackItalic.ttf in Resources */,
 				8DB684EC1AAAA85800AB441C /* LaunchScreen.xib in Resources */,
+				8D475C451AAB621A00A7F60E /* OpenSans-Italic.ttf in Resources */,
+				8D475C411AAB621A00A7F60E /* OpenSans-Bold.ttf in Resources */,
+				8D475C481AAB621A00A7F60E /* OpenSans-Regular.ttf in Resources */,
 				8D475C2A1AAB4EDD00A7F60E /* Lato-LightItalic.ttf in Resources */,
 				8D475C271AAB4EDD00A7F60E /* Lato-HairlineItalic.ttf in Resources */,
 				8D475C251AAB4EDD00A7F60E /* Lato-BoldItalic.ttf in Resources */,
+				8D475C4A1AAB621A00A7F60E /* OpenSans-SemiboldItalic.ttf in Resources */,
 				8D475C2B1AAB4EDD00A7F60E /* Lato-Regular.ttf in Resources */,
+				8D475C491AAB621A00A7F60E /* OpenSans-Semibold.ttf in Resources */,
 				8D475C261AAB4EDD00A7F60E /* Lato-Hairline.ttf in Resources */,
+				8D475C421AAB621A00A7F60E /* OpenSans-BoldItalic.ttf in Resources */,
+				8D475C431AAB621A00A7F60E /* OpenSans-ExtraBold.ttf in Resources */,
+				8D475C461AAB621A00A7F60E /* OpenSans-Light.ttf in Resources */,
 				8DB684E91AAAA85800AB441C /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

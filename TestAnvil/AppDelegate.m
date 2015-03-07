@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import <Parse/Parse.h>
+#import <Colours.h>
 #import <TestAnvil-Swift.h>
 
 #import "MSDynamicsDrawerViewController.h"
@@ -28,6 +29,16 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     
+    // Setting the navigation bar style
+    [[UINavigationBar appearance] setBarTintColor:[UIColor colorFromHexString:@"f0f0f0"]];
+    // [[UITabBar appearance] setTintColor:[UIColor colorFromHexString:@"3d5fc4"]];
+    // White or black
+    // [UIColor colorFromHexString:@"4d4d4d"]
+    [[UINavigationBar appearance] setTintColor:[UIColor colorFromHexString:@"4d4d4d"]];
+    [[UINavigationBar appearance] setTitleTextAttributes: [NSDictionary dictionaryWithObjectsAndKeys:
+                                                           [UIColor colorFromHexString:@"4d4d4d"], NSForegroundColorAttributeName,
+                                                           [UIFont fontWithName:@"OpenSans-Semibold" size:17.0],NSFontAttributeName, nil]];
+    [[UINavigationBar appearance] setTranslucent:NO];
     
     // Parse.com
     [Parse setApplicationId:@"205P4oUq3V0ZwBkD7U12KP0WsHCX6Ev6Ijhab274"
