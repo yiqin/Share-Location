@@ -20,6 +20,7 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     
+    
     // Parse.com
     [Parse setApplicationId:@"205P4oUq3V0ZwBkD7U12KP0WsHCX6Ev6Ijhab274"
                   clientKey:@"gKXhLghjgmQCzYoKdlZcOD5fQX8Qo5j6mGkIraTQ"];
@@ -40,7 +41,11 @@
         }];
     }
     
+    
+    
     [[TestAnvilLocationManager sharedInstance] startLocationManager];
+    
+    
     
     
     return YES;

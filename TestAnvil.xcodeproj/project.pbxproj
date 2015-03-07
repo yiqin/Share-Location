@@ -10,6 +10,7 @@
 		61298F1A1F75918037B7191E /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 345DC219685F051F823BD06E /* libPods.a */; };
 		8D475C0F1AAB370200A7F60E /* CurrentUserManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D475C0E1AAB370200A7F60E /* CurrentUserManager.swift */; };
 		8D475C121AAB3CB900A7F60E /* TestAnvilLocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D475C111AAB3CB900A7F60E /* TestAnvilLocationManager.swift */; };
+		8D475C141AAB4ABB00A7F60E /* NSParseObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D475C131AAB4ABB00A7F60E /* NSParseObject.swift */; };
 		8DB684DB1AAAA85800AB441C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DB684DA1AAAA85800AB441C /* main.m */; };
 		8DB684DE1AAAA85800AB441C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DB684DD1AAAA85800AB441C /* AppDelegate.m */; };
 		8DB684E11AAAA85800AB441C /* TestAnvil.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8DB684DF1AAAA85800AB441C /* TestAnvil.xcdatamodeld */; };
@@ -36,6 +37,7 @@
 		345DC219685F051F823BD06E /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D475C0E1AAB370200A7F60E /* CurrentUserManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrentUserManager.swift; sourceTree = "<group>"; };
 		8D475C111AAB3CB900A7F60E /* TestAnvilLocationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestAnvilLocationManager.swift; sourceTree = "<group>"; };
+		8D475C131AAB4ABB00A7F60E /* NSParseObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSParseObject.swift; sourceTree = "<group>"; };
 		8DB684D51AAAA85800AB441C /* TestAnvil.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestAnvil.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8DB684D91AAAA85800AB441C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8DB684DA1AAAA85800AB441C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -92,6 +94,14 @@
 			name = DataManager;
 			sourceTree = "<group>";
 		};
+		8D475C151AAB4AFF00A7F60E /* DataClass */ = {
+			isa = PBXGroup;
+			children = (
+				8D475C131AAB4ABB00A7F60E /* NSParseObject.swift */,
+			);
+			name = DataClass;
+			sourceTree = "<group>";
+		};
 		8DB684CC1AAAA85800AB441C = {
 			isa = PBXGroup;
 			children = (
@@ -118,6 +128,7 @@
 				8DB684DC1AAAA85800AB441C /* AppDelegate.h */,
 				8DB684DD1AAAA85800AB441C /* AppDelegate.m */,
 				8DB685021AAAA87200AB441C /* ViewController.swift */,
+				8D475C151AAB4AFF00A7F60E /* DataClass */,
 				8D475C101AAB37ED00A7F60E /* DataManager */,
 				8DB684E51AAAA85800AB441C /* Main.storyboard */,
 				8DB684E81AAAA85800AB441C /* Images.xcassets */,
@@ -313,6 +324,7 @@
 				8DB685031AAAA87200AB441C /* ViewController.swift in Sources */,
 				8DB684DB1AAAA85800AB441C /* main.m in Sources */,
 				8D475C121AAB3CB900A7F60E /* TestAnvilLocationManager.swift in Sources */,
+				8D475C141AAB4ABB00A7F60E /* NSParseObject.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
