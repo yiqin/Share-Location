@@ -65,6 +65,8 @@
     
     [[TestAnvilLocationManager sharedInstance] startLocationManager];
     
+    
+    
     self.dynamicsDrawerViewController = [[MSDynamicsDrawerViewController alloc] initWithNibName:nil bundle:nil];
     self.dynamicsDrawerViewController.delegate = self;
     self.dynamicsDrawerViewController.gravityMagnitude = 13.0;

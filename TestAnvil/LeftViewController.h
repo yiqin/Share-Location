@@ -11,7 +11,7 @@
 #import <MSDynamicsDrawerStyler.h>
 
 
-@interface LeftViewController : UIViewController
+@interface LeftViewController : UIViewController <UITableViewDataSource, UITableViewDelegate>
 
 @property (nonatomic, weak) MSDynamicsDrawerViewController *dynamicsDrawerViewController;
 

@@ -26,6 +26,11 @@
 		8D475CB51AAB7A8B00A7F60E /* OpenSans-Semibold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8D475CAB1AAB7A8B00A7F60E /* OpenSans-Semibold.ttf */; };
 		8D475CB61AAB7A8B00A7F60E /* OpenSans-SemiboldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8D475CAC1AAB7A8B00A7F60E /* OpenSans-SemiboldItalic.ttf */; };
 		8D475CB71AAB7B4C00A7F60E /* OpenSans-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8D475CA31AAB7A8B00A7F60E /* OpenSans-Bold.ttf */; };
+		8D475CBA1AAB7F1200A7F60E /* TestAnvilTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D475CB91AAB7F1200A7F60E /* TestAnvilTableViewCell.m */; };
+		8D475CBD1AAB7F6000A7F60E /* LeadingBoardTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D475CBC1AAB7F6000A7F60E /* LeadingBoardTableViewCell.m */; };
+		8D475CC01AAB7F8400A7F60E /* DistanceBoardTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D475CBF1AAB7F8400A7F60E /* DistanceBoardTableViewCell.m */; };
+		8D475CC31AAB7FE400A7F60E /* CityBoardTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D475CC21AAB7FE400A7F60E /* CityBoardTableViewCell.m */; };
+		8D475CC91AAB866300A7F60E /* LeftDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D475CC81AAB866300A7F60E /* LeftDataManager.m */; };
 		8DB684DB1AAAA85800AB441C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DB684DA1AAAA85800AB441C /* main.m */; };
 		8DB684DE1AAAA85800AB441C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DB684DD1AAAA85800AB441C /* AppDelegate.m */; };
 		8DB684E11AAAA85800AB441C /* TestAnvil.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8DB684DF1AAAA85800AB441C /* TestAnvil.xcdatamodeld */; };
@@ -71,6 +76,16 @@
 		8D475CAA1AAB7A8B00A7F60E /* OpenSans-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Regular.ttf"; sourceTree = "<group>"; };
 		8D475CAB1AAB7A8B00A7F60E /* OpenSans-Semibold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Semibold.ttf"; sourceTree = "<group>"; };
 		8D475CAC1AAB7A8B00A7F60E /* OpenSans-SemiboldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-SemiboldItalic.ttf"; sourceTree = "<group>"; };
+		8D475CB81AAB7F1200A7F60E /* TestAnvilTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestAnvilTableViewCell.h; sourceTree = "<group>"; };
+		8D475CB91AAB7F1200A7F60E /* TestAnvilTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestAnvilTableViewCell.m; sourceTree = "<group>"; };
+		8D475CBB1AAB7F6000A7F60E /* LeadingBoardTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LeadingBoardTableViewCell.h; sourceTree = "<group>"; };
+		8D475CBC1AAB7F6000A7F60E /* LeadingBoardTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LeadingBoardTableViewCell.m; sourceTree = "<group>"; };
+		8D475CBE1AAB7F8400A7F60E /* DistanceBoardTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DistanceBoardTableViewCell.h; sourceTree = "<group>"; };
+		8D475CBF1AAB7F8400A7F60E /* DistanceBoardTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DistanceBoardTableViewCell.m; sourceTree = "<group>"; };
+		8D475CC11AAB7FE400A7F60E /* CityBoardTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CityBoardTableViewCell.h; sourceTree = "<group>"; };
+		8D475CC21AAB7FE400A7F60E /* CityBoardTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CityBoardTableViewCell.m; sourceTree = "<group>"; };
+		8D475CC71AAB866300A7F60E /* LeftDataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LeftDataManager.h; sourceTree = "<group>"; };
+		8D475CC81AAB866300A7F60E /* LeftDataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LeftDataManager.m; sourceTree = "<group>"; };
 		8DB684D51AAAA85800AB441C /* TestAnvil.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestAnvil.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8DB684D91AAAA85800AB441C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8DB684DA1AAAA85800AB441C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -123,6 +138,8 @@
 			children = (
 				8D475C0E1AAB370200A7F60E /* CurrentUserManager.swift */,
 				8D475C111AAB3CB900A7F60E /* TestAnvilLocationManager.swift */,
+				8D475CC71AAB866300A7F60E /* LeftDataManager.h */,
+				8D475CC81AAB866300A7F60E /* LeftDataManager.m */,
 			);
 			name = DataManager;
 			sourceTree = "<group>";
@@ -150,6 +167,21 @@
 				8D475CAC1AAB7A8B00A7F60E /* OpenSans-SemiboldItalic.ttf */,
 			);
 			path = Open_Sans;
+			sourceTree = "<group>";
+		};
+		8D475CC41AAB840700A7F60E /* LeftTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				8D475CB81AAB7F1200A7F60E /* TestAnvilTableViewCell.h */,
+				8D475CB91AAB7F1200A7F60E /* TestAnvilTableViewCell.m */,
+				8D475CBB1AAB7F6000A7F60E /* LeadingBoardTableViewCell.h */,
+				8D475CBC1AAB7F6000A7F60E /* LeadingBoardTableViewCell.m */,
+				8D475CBE1AAB7F8400A7F60E /* DistanceBoardTableViewCell.h */,
+				8D475CBF1AAB7F8400A7F60E /* DistanceBoardTableViewCell.m */,
+				8D475CC11AAB7FE400A7F60E /* CityBoardTableViewCell.h */,
+				8D475CC21AAB7FE400A7F60E /* CityBoardTableViewCell.m */,
+			);
+			name = LeftTableViewCell;
 			sourceTree = "<group>";
 		};
 		8DB684CC1AAAA85800AB441C = {
@@ -184,6 +216,7 @@
 				8D475C2E1AAB59A500A7F60E /* MainViewController.m */,
 				8D475C301AAB59CB00A7F60E /* LeftViewController.h */,
 				8D475C311AAB59CB00A7F60E /* LeftViewController.m */,
+				8D475CC41AAB840700A7F60E /* LeftTableViewCell */,
 				8D475C331AAB59DE00A7F60E /* RightViewController.h */,
 				8D475C341AAB59DE00A7F60E /* RightViewController.m */,
 				8D475C151AAB4AFF00A7F60E /* DataClass */,
@@ -389,13 +422,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				8D475C321AAB59CB00A7F60E /* LeftViewController.m in Sources */,
+				8D475CC01AAB7F8400A7F60E /* DistanceBoardTableViewCell.m in Sources */,
 				8DB684DE1AAAA85800AB441C /* AppDelegate.m in Sources */,
+				8D475CBD1AAB7F6000A7F60E /* LeadingBoardTableViewCell.m in Sources */,
 				8D475C0F1AAB370200A7F60E /* CurrentUserManager.swift in Sources */,
 				8DB684E11AAAA85800AB441C /* TestAnvil.xcdatamodeld in Sources */,
 				8D475C2F1AAB59A500A7F60E /* MainViewController.m in Sources */,
 				8D475C351AAB59DE00A7F60E /* RightViewController.m in Sources */,
+				8D475CC31AAB7FE400A7F60E /* CityBoardTableViewCell.m in Sources */,
 				8DB685031AAAA87200AB441C /* ViewController.swift in Sources */,
 				8DB684DB1AAAA85800AB441C /* main.m in Sources */,
+				8D475CBA1AAB7F1200A7F60E /* TestAnvilTableViewCell.m in Sources */,
+				8D475CC91AAB866300A7F60E /* LeftDataManager.m in Sources */,
 				8D475C4D1AAB75C200A7F60E /* MainNavigationController.m in Sources */,
 				8D475C121AAB3CB900A7F60E /* TestAnvilLocationManager.swift in Sources */,
 				8D475C141AAB4ABB00A7F60E /* NSParseObject.swift in Sources */,
