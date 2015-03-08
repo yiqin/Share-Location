@@ -10,12 +10,14 @@ import UIKit
 import MapKit
 import CoreLocation
 
-class MainViewController: UIViewController, LeftViewControllerDelegate {
+class MainViewController: UIViewController, LeftViewControllerDelegate, MKMapViewDelegate {
 
     var mapview:MKMapView!
     var lManager:CLLocationManager!
     var infoView:InfoView!
     var leadingBoardScrollView : JT3DScrollView!
+	var timer:NSTimer!;
+	var mkan:MKAnnotationView!;
     
     
     // A lot of CLLocation-s
@@ -58,6 +60,7 @@ class MainViewController: UIViewController, LeftViewControllerDelegate {
         mapview.zoomEnabled = false;
         mapview.scrollEnabled =  false;
         mapview.rotateEnabled = false;
+		mapview.delegate = self;
         view.addSubview(mapview)
         
         infoView = InfoView(frame: CGRectMake(0, self.view.frame.height - 125, self.view.frame.width, 125))
@@ -150,6 +153,18 @@ class MainViewController: UIViewController, LeftViewControllerDelegate {
         
         
     }
+	
+	func mapView(mapView: MKMapView!, didAddAnnotationViews views: [AnyObject]!) {
+		for  annotation in views {
+			//if (annotation as NSObject == mapview.userLocation){
+				mkan = annotation as MKAnnotationView
+				timer = NSTimer.scheduledTimerWithTimeInterval(0.1, target: self, selector: Selector("displayAnnotation"), userInfo: nil, repeats: false)
+			//}
+		}
+	}
+	func displayAnnotation(){
+		mapview .selectAnnotation(mkan.annotation as MKAnnotation , animated: true)
 
+	}
     
 }
