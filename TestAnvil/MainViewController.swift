@@ -51,7 +51,7 @@ class MainViewController: UIViewController, LeftViewControllerDelegate {
         lManager.requestAlwaysAuthorization()
         lManager.startUpdatingLocation()
         
-        mapview = MKMapView(frame: CGRectMake(0, 0, self.view.frame.width, self.view.frame.height-100))
+        mapview = MKMapView(frame: CGRectMake(0, 0, self.view.frame.width, self.view.frame.height-125))
         mapview.autoresizingMask = UIViewAutoresizing.FlexibleWidth | UIViewAutoresizing.FlexibleHeight
         mapview.showsUserLocation = true
         mapview.setUserTrackingMode(MKUserTrackingMode.Follow, animated: false)
@@ -60,7 +60,7 @@ class MainViewController: UIViewController, LeftViewControllerDelegate {
         mapview.rotateEnabled = false;
         view.addSubview(mapview)
         
-        infoView = InfoView(frame: CGRectMake(0, self.view.frame.height - 100, self.view.frame.width, 100))
+        infoView = InfoView(frame: CGRectMake(0, self.view.frame.height - 125, self.view.frame.width, 125))
         infoView.autoresizingMask = UIViewAutoresizing.FlexibleTopMargin | UIViewAutoresizing.FlexibleWidth
         view.addSubview(infoView)
         

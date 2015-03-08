@@ -13,19 +13,26 @@ class InfoView: UIView {
 	var rateLabel:UILabel! = nil
 	var hitsTodayLabel:UILabel! = nil
 	var totalEarningsLabel:UILabel! = nil
+	var enableLocationSwitch:UISwitch! = { var l = UISwitch(frame: CGRectMake(240, 5, 100, 50)); return l}()
+	
 	
 	//Internal properties
-	var rateTitleLabel:UILabel = {  var l = UILabel(frame: CGRectMake(2, 5, 100, 20));
+	var rateTitleLabel:UILabel = {  var l = UILabel(frame: CGRectMake(2, 55, 100, 20));
 									l.text = "Rate";
 									l.textColor = UIColor.whiteColor();
 									return l}()
 	
-	var hitsTitleLabel:UILabel = {	var l = UILabel(frame: CGRectMake(112, 5, 140, 20));
+	var enableTitleLabel:UILabel = {  var l = UILabel(frame: CGRectMake(2, 5, 200, 20));
+		l.text = "Enable Location ";
+		l.textColor = UIColor.whiteColor();
+		return l}()
+	
+	var hitsTitleLabel:UILabel = {	var l = UILabel(frame: CGRectMake(112, 55, 140, 20));
 									l.text = "Lookups Today" ;
 									l.textColor = UIColor.whiteColor();
 									return l}();
 	
-	var earningsTitleLabel:UILabel = {	var l = UILabel(frame: CGRectMake(262, 5, 140, 20));
+	var earningsTitleLabel:UILabel = {	var l = UILabel(frame: CGRectMake(262, 55, 140, 20));
 										l.text = "Total Earnings" ;
 										l.textColor = UIColor.whiteColor();
 										return l}();
@@ -43,19 +50,21 @@ class InfoView: UIView {
 		addSubview(rateTitleLabel)
 		addSubview(hitsTitleLabel)
 		addSubview(earningsTitleLabel)
+		addSubview(enableTitleLabel)
+		addSubview(enableLocationSwitch)
 		
-		rateLabel = UILabel(frame: CGRectMake(2, 45, 100, 20));
+		rateLabel = UILabel(frame: CGRectMake(2, 95, 100, 20));
 		rateLabel.text = "4 cents"
 		rateLabel.textColor = UIColor.whiteColor()
 		addSubview(rateLabel)
 		
-		hitsTodayLabel = UILabel(frame: CGRectMake(112, 45, 140, 20));
+		hitsTodayLabel = UILabel(frame: CGRectMake(112, 95, 140, 20));
 		hitsTodayLabel.text = "11 hits"
 		hitsTodayLabel.textColor = UIColor.whiteColor()
 
 		addSubview(hitsTodayLabel)
 	
-		totalEarningsLabel = UILabel(frame: CGRectMake(262, 45, 140, 20));
+		totalEarningsLabel = UILabel(frame: CGRectMake(262, 95, 140, 20));
 		totalEarningsLabel.text = "352 cents"
 		totalEarningsLabel.textColor = UIColor.whiteColor()
 
