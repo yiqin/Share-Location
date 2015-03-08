@@ -24,6 +24,7 @@
 @interface AppDelegate () <MSDynamicsDrawerViewControllerDelegate>
 
 @property (nonatomic, strong) UIImageView *windowBackground;
+@property (nonatomic, strong) MainViewController *mainViewController;
 
 @end
 
@@ -71,6 +72,7 @@
     [[TestAnvilLocationManager sharedInstance] startLocationManager];
     
     
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(receivedRequestToShowOtherUserPath:) name:@"dismissLeadingBoardScrollView" object:nil];
     
     
     
@@ -89,9 +91,9 @@
     [self.dynamicsDrawerViewController addStylersFromArray:@[[MSDynamicsDrawerScaleStyler styler], [MSDynamicsDrawerFadeStyler styler]] forDirection:MSDynamicsDrawerDirectionRight];
     
     
-    MainViewController *mainViewController = [[MainViewController alloc] initWithNibName:nil bundle:nil];
+    self.mainViewController = [[MainViewController alloc] initWithNibName:nil bundle:nil];
     
-    MainNavigationController *mainNavigationController = [[MainNavigationController alloc] initWithRootViewController:mainViewController];
+    MainNavigationController *mainNavigationController = [[MainNavigationController alloc] initWithRootViewController:self.mainViewController];
     
     self.dynamicsDrawerViewController.paneViewController = mainNavigationController;
     
@@ -100,7 +102,7 @@
     
     LeftViewController *leftViewController = [[LeftViewController alloc] initWithNibName:nil bundle:nil];
     [self.dynamicsDrawerViewController setDrawerViewController:leftViewController forDirection:MSDynamicsDrawerDirectionLeft];
-    leftViewController.delegate = mainViewController;
+    leftViewController.delegate = self.mainViewController;
     
     RightViewController *rightViewController = [[RightViewController alloc] initWithNibName:nil bundle:nil];
     [self.dynamicsDrawerViewController setDrawerViewController:rightViewController forDirection:MSDynamicsDrawerDirectionRight];
@@ -281,6 +283,44 @@
 - (void)dynamicsDrawerViewController:(MSDynamicsDrawerViewController *)drawerViewController didUpdateToPaneState:(MSDynamicsDrawerPaneState)paneState forDirection:(MSDynamicsDrawerDirection)direction
 {
     NSLog(@"Drawer view controller did update to state `%@` for direction `%@`", [self descriptionForPaneState:paneState], [self descriptionForDirection:direction]);
+}
+
+
+- (void)receivedRequestToShowOtherUserPath:(NSNotification*)notification {
+    
+    
+    
+    NSDictionary *userInfo = notification.userInfo;
+    NSString *objectId = [userInfo objectForKey:@"message"];
+    [[RequestUserPathDataManager sharedManager] loadLeadingDataWithUserObjectId:objectId success:^(NSArray *array, NSError *error) {
+        
+        
+        if (array.count > 1) {
+            
+            CLLocation *location = [array objectAtIndex:0];
+            
+            
+            
+        }
+        
+        [self.mainViewController updateUserPathDataArray:array];
+        
+        
+        // array  - CLLocation-s
+        
+        
+        
+        
+        
+        
+        
+        
+        
+    } failure:^{
+        
+    }];
+    
+    
 }
 
 @end

@@ -17,6 +17,10 @@ class MainViewController: UIViewController, LeftViewControllerDelegate {
     var infoView:InfoView!
     var leadingBoardScrollView : JT3DScrollView!
     
+    
+    // A lot of CLLocation-s
+    var userPathDataArray : NSMutableArray = []
+    
     override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: NSBundle?) {
         
         let xPadding : CGFloat = 10.0
@@ -59,9 +63,7 @@ class MainViewController: UIViewController, LeftViewControllerDelegate {
         infoView = InfoView(frame: CGRectMake(0, self.view.frame.height - 100, self.view.frame.width, 100))
         infoView.autoresizingMask = UIViewAutoresizing.FlexibleTopMargin | UIViewAutoresizing.FlexibleWidth
         view.addSubview(infoView)
-        
-        
-        NSNotificationCenter.defaultCenter().addObserver(self, selector: "receivedRequestToShowOtherUserPath:", name: "dismissLeadingBoardScrollView", object: nil)
+
     }
     
     override func viewWillAppear(animated: Bool) {
@@ -114,14 +116,14 @@ class MainViewController: UIViewController, LeftViewControllerDelegate {
         view.addSubview(leadingBoardScrollView)
         
     }
-
     
-    func receivedRequestToShowOtherUserPath(notification:NSNotification){
+    
+    func updateUserPathDataArray(userPathDataArray:NSArray){
         
-        var userInfo = notification.userInfo!["message"] as String
+        println(userPathDataArray.count)
         
-        println("return \(userInfo)")
         
     }
+
     
 }

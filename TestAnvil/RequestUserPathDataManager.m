@@ -40,25 +40,36 @@
     
     PFQuery *query = [PFQuery queryWithClassName:@"Location"];
     query.limit = 40;
-    [query whereKey:@"user" equalTo:objectId];
+    [query whereKey:@"userObjectId" equalTo:objectId];
     [query addAscendingOrder:@"createdAt"];
     [query findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error) {
         if (!error) {
             NSLog(@"success    %lu", (unsigned long)objects.count);
             
-            @synchronized(self.objects){
-//                self.leadingObjects = [[NSMutableArray alloc] init];
-//                for (PFObject *object in objects) {
-//                    TestAnvilUser *testAnvilUser = [[TestAnvilUser alloc] initWithParseObject:object];
-//                    [self.leadingObjects addObject:testAnvilUser];
-//                }
-//                successCompletion([self.leadingObjects copy], nil);
+            NSMutableArray *temp = [[NSMutableArray alloc] init];
+            
+            for (PFObject *object in objects) {
+                CLLocation *location = [self parseFromPFObject:object];
+                [temp addObject:location];
             }
+            successCompletion([temp copy], nil);
+            
         }
         else {
             failureCompletion();
         }
     }];
+}
+
+-(CLLocation *)parseFromPFObject:(PFObject *)object {
+    
+    PFGeoPoint *geoPoint = [object objectForKey:@"currentLocation"];
+    double latitude = geoPoint.latitude;
+    double longtitude = geoPoint.latitude;
+    
+    CLLocation *clLocation = [[CLLocation alloc] initWithLatitude:latitude longitude:longtitude];
+    
+    return clLocation;
 }
 
 

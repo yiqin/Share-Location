@@ -15,3 +15,5 @@
 
 
 #import "TestAnvilUser.h"
+
+#import "RequestUserPathDataManager.h"
