@@ -91,6 +91,37 @@ class ProfileCardView: UIView {
     }
     
     func pressedRequestButton() {
-        NSNotificationCenter.defaultCenter().postNotificationName("dismissLeadingBoardScrollView", object: nil)
+        
+        let price = "0.3"
+        
+        let alert = UIAlertView()
+        alert.delegate = self
+        alert.title = "Alert"
+        alert.message = "You will will be charge $" + price + "to view the location, continue?"
+        alert.addButtonWithTitle("Yes")
+        alert.addButtonWithTitle("Cancel")
+        alert.show()
+        // yes
+        //
+    }
+    
+    
+    func alertView(View: UIAlertView!, clickedButtonAtIndex buttonIndex: Int){
+        
+        switch buttonIndex{
+            
+        case 1:
+            NSLog("Retry");
+            println("lalala")
+            break;
+        case 0:
+            NSLog("Dismiss");
+            break;
+        default:
+            NSLog("Default");
+            break;
+            //Some code here..
+            
+        }
     }
 }
