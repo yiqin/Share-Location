@@ -14,6 +14,8 @@
 
 -(instancetype)initWithParseObject:(PFObject *)object;
 
+@property(nonatomic, strong) NSString *objectId;
+@property(nonatomic, strong) PFObject *pFUser;
 @property(nonatomic, strong) NSString *screenName;
 @property(nonatomic, strong) TestAnvilImage *profileImage;
 

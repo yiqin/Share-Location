@@ -17,6 +17,7 @@
 #import "TestAnvilUser.h"
 
 #import <JT3DScrollView.h>
+#import "RequestUserPathDataManager.h"
 
 @interface LeftViewController ()
 
@@ -88,7 +89,7 @@
     [self.cancelButton setTitle:@"Cancel" forState:UIControlStateNormal];
     
     
-    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(pressedCancel) name:@"dismissLeadingBoardScrollView" object:nil];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(pressedRequest:) name:@"dismissLeadingBoardScrollView" object:nil];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -243,9 +244,20 @@
 }
 
 
+- (void)pressedRequest:(NSNotification *)notification {
+
+    // NSDictionary *userInfo = notification.userInfo;
+    // [RequestUserPathDataManager sharedManager]
+    
+    [self.leadingBoardScrollView removeFromSuperview];
+    [self.cancelButton removeFromSuperview];
+    
+}
+
 - (void)pressedCancel {
     [self.leadingBoardScrollView removeFromSuperview];
     [self.cancelButton removeFromSuperview];
 }
+
 
 @end

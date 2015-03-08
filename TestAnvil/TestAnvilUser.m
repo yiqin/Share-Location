@@ -13,10 +13,12 @@
 -(instancetype)initWithParseObject:(PFObject *)object {
     self = [super init];
     if (self) {
+        _objectId = object.objectId;
         _screenName = [object objectForKey:@"screenName"];
         PFFile *tempPFFile = [object objectForKey:@"profileImage"];
         _profileImage = [[TestAnvilImage alloc] initWithPFFile:tempPFFile];
         [_profileImage loadImage];
+        _pFUser = object;
     }
     return self;
 }

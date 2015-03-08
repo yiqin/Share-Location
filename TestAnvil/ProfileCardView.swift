@@ -18,6 +18,10 @@ class ProfileCardView: UIView {
     
     var screenNameLabel : UILabel!
     
+    
+    
+    
+    
     private let profileBackgroundImageSize : CGFloat = 140
     private let profileImageSize : CGFloat = 134
     
@@ -88,6 +92,9 @@ class ProfileCardView: UIView {
         userProfileImageView.image = user.profileImage.image
         
         screenNameLabel.text = user.screenName
+        
+        
+        self.user = user
     }
     
     func pressedRequestButton() {
@@ -116,7 +123,7 @@ class ProfileCardView: UIView {
             break;
         case 0:
             NSLog("Dismiss");
-        NSNotificationCenter.defaultCenter().postNotificationName("dismissLeadingBoardScrollView", object: nil)
+            self.sendSomethingThrough()
             break;
         default:
             NSLog("Default");
@@ -124,5 +131,10 @@ class ProfileCardView: UIView {
             //Some code here..
             
         }
+    }
+    
+    func sendSomethingThrough() {
+        println(user.objectId)
+        NSNotificationCenter.defaultCenter().postNotificationName("dismissLeadingBoardScrollView", object: nil, userInfo:["message":user.objectId])
     }
 }

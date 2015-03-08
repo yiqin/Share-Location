@@ -40,7 +40,7 @@ class CurrentUserManager: NSObject {
     
     func saveCurrentGeopointToParseForOthers(currentGeoPoint:PFGeoPoint) {
         var object = PFObject(className: "Location")
-        object["user"] = PFUser.currentUser()
+        object["userObjectId"] = PFUser.currentUser().objectId
         object["currentLocation"] = currentGeoPoint
         object.saveInBackgroundWithBlock { (succeeded:Bool!, error:NSError!) -> Void in
             if((succeeded) != nil){

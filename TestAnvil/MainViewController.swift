@@ -61,7 +61,7 @@ class MainViewController: UIViewController, LeftViewControllerDelegate {
         view.addSubview(infoView)
         
         
-        
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: "receivedRequestToShowOtherUserPath:", name: "dismissLeadingBoardScrollView", object: nil)
     }
     
     override func viewWillAppear(animated: Bool) {
@@ -115,4 +115,13 @@ class MainViewController: UIViewController, LeftViewControllerDelegate {
         
     }
 
+    
+    func receivedRequestToShowOtherUserPath(notification:NSNotification){
+        
+        var userInfo = notification.userInfo!["message"] as String
+        
+        println("return \(userInfo)")
+        
+    }
+    
 }

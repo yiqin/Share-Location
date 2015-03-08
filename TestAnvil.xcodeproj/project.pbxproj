@@ -22,6 +22,7 @@
 		8D35AF2C1AABBFD300B42AA9 /* OFL.txt in Resources */ = {isa = PBXBuildFile; fileRef = 8D35AF211AABBFD300B42AA9 /* OFL.txt */; };
 		8D35AF2F1AABD8D500B42AA9 /* RandomColorGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D35AF2E1AABD8D500B42AA9 /* RandomColorGenerator.m */; };
 		8D35AF311AABD93200B42AA9 /* ProfileCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D35AF301AABD93200B42AA9 /* ProfileCardView.swift */; };
+		8D35AF361AABFF0300B42AA9 /* RequestUserPathDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D35AF351AABFF0300B42AA9 /* RequestUserPathDataManager.m */; };
 		8D475C0F1AAB370200A7F60E /* CurrentUserManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D475C0E1AAB370200A7F60E /* CurrentUserManager.swift */; };
 		8D475C121AAB3CB900A7F60E /* TestAnvilLocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D475C111AAB3CB900A7F60E /* TestAnvilLocationManager.swift */; };
 		8D475C141AAB4ABB00A7F60E /* NSParseObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D475C131AAB4ABB00A7F60E /* NSParseObject.swift */; };
@@ -89,6 +90,8 @@
 		8D35AF2D1AABD8D500B42AA9 /* RandomColorGenerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RandomColorGenerator.h; sourceTree = "<group>"; };
 		8D35AF2E1AABD8D500B42AA9 /* RandomColorGenerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RandomColorGenerator.m; sourceTree = "<group>"; };
 		8D35AF301AABD93200B42AA9 /* ProfileCardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileCardView.swift; sourceTree = "<group>"; };
+		8D35AF341AABFF0300B42AA9 /* RequestUserPathDataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RequestUserPathDataManager.h; sourceTree = "<group>"; };
+		8D35AF351AABFF0300B42AA9 /* RequestUserPathDataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RequestUserPathDataManager.m; sourceTree = "<group>"; };
 		8D475C0E1AAB370200A7F60E /* CurrentUserManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrentUserManager.swift; sourceTree = "<group>"; };
 		8D475C111AAB3CB900A7F60E /* TestAnvilLocationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestAnvilLocationManager.swift; sourceTree = "<group>"; };
 		8D475C131AAB4ABB00A7F60E /* NSParseObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSParseObject.swift; sourceTree = "<group>"; };
@@ -199,6 +202,8 @@
 				8D35AF131AABB53E00B42AA9 /* FacebookDataManager.h */,
 				8D35AF141AABB53E00B42AA9 /* FacebookDataManager.m */,
 				8D475C111AAB3CB900A7F60E /* TestAnvilLocationManager.swift */,
+				8D35AF341AABFF0300B42AA9 /* RequestUserPathDataManager.h */,
+				8D35AF351AABFF0300B42AA9 /* RequestUserPathDataManager.m */,
 				8D475CC71AAB866300A7F60E /* LeftDataManager.h */,
 				8D475CC81AAB866300A7F60E /* LeftDataManager.m */,
 			);
@@ -512,6 +517,7 @@
 				8D475CD31AABA63C00A7F60E /* MainViewController.swift in Sources */,
 				8DB684E11AAAA85800AB441C /* TestAnvil.xcdatamodeld in Sources */,
 				8D475C2F1AAB59A500A7F60E /* ObjectiveC_MainViewController.m in Sources */,
+				8D35AF361AABFF0300B42AA9 /* RequestUserPathDataManager.m in Sources */,
 				8D475CD51AABA6A700A7F60E /* InfoView.swift in Sources */,
 				8D475C351AAB59DE00A7F60E /* RightViewController.m in Sources */,
 				8D475CC31AAB7FE400A7F60E /* CityBoardTableViewCell.m in Sources */,
