@@ -19,6 +19,8 @@
         _profileImage = [[TestAnvilImage alloc] initWithPFFile:tempPFFile];
         [_profileImage loadImage];
         _pFUser = object;
+        
+        _moneyTotal = [object objectForKey:@"moneyTotal"];
     }
     return self;
 }

@@ -18,5 +18,6 @@
 @property(nonatomic, strong) PFObject *pFUser;
 @property(nonatomic, strong) NSString *screenName;
 @property(nonatomic, strong) TestAnvilImage *profileImage;
+@property(nonatomic, strong) NSNumber *moneyTotal;
 
 @end

@@ -63,7 +63,21 @@ class MainViewController: UIViewController, LeftViewControllerDelegate {
         infoView = InfoView(frame: CGRectMake(0, self.view.frame.height - 100, self.view.frame.width, 100))
         infoView.autoresizingMask = UIViewAutoresizing.FlexibleTopMargin | UIViewAutoresizing.FlexibleWidth
         view.addSubview(infoView)
-
+        
+        
+        let tempText = NSMutableAttributedString(string: "LOCASHION")
+        tempText.addAttribute(NSFontAttributeName, value: UIFont(name: "OpenSans-Semibold", size: 17)!, range: NSMakeRange(0, tempText.length))
+        
+        tempText.addAttribute(NSForegroundColorAttributeName, value: UIColor.redColor(), range: NSMakeRange(0, 3))
+        
+        
+        let tempWidth = UIScreen.mainScreen().bounds.size.width
+        
+        let tempLabel = TTTAttributedLabel(frame: CGRectMake(0, 0, tempWidth, 44))
+        tempLabel.attributedText = tempText
+        tempLabel.textAlignment = NSTextAlignment.Center
+        
+        navigationItem.titleView = tempLabel
     }
     
     override func viewWillAppear(animated: Bool) {
@@ -79,6 +93,8 @@ class MainViewController: UIViewController, LeftViewControllerDelegate {
     func setRightNavigationItem() {
         var b = UIBarButtonItem(title: "Setting", style: .Plain, target: self, action: "pressProfileSetting")
         self.navigationItem.rightBarButtonItem = b
+        
+        self.navigationItem.leftBarButtonItem = b
     }
     
     override func didReceiveMemoryWarning() {

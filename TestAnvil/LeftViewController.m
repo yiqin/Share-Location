@@ -36,7 +36,7 @@
 -(instancetype)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
     self = [super initWithNibName:nil bundle:nil];
     if (self) {
-        self.view.backgroundColor = [UIColor colorWithRed:1.0 green:1.0 blue:1.0 alpha:0.7];
+        self.view.backgroundColor = [UIColor colorWithRed:1.0 green:1.0 blue:1.0 alpha:0.9];
         
         _tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, CGRectGetWidth(self.view.frame), CGRectGetHeight(self.view.frame))];
         _tableView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
@@ -69,7 +69,7 @@
     
     
     CGFloat topPadding = 44;
-    CGFloat bottomPadding = 80;
+    CGFloat bottomPadding = 74;
     CGFloat xPadding = 20;
     
     self.leadingBoardScrollView = [[JT3DScrollView alloc] initWithFrame:CGRectMake(xPadding, topPadding, CGRectGetWidth(self.view.frame)-2*xPadding, CGRectGetHeight(self.view.frame)-topPadding-bottomPadding)];
@@ -85,7 +85,7 @@
     [self.cancelButton addTarget:self action:@selector(pressedCancel) forControlEvents:UIControlEventTouchUpInside];
     [self.cancelButton setBackgroundColor:[UIColor colorFromHexString:@"f0f0f0"]];
     self.cancelButton.layer.cornerRadius = 8;
-    self.cancelButton.titleLabel.font=[UIFont fontWithName:@"OpenSans-Semibold" size:17.0];
+    self.cancelButton.titleLabel.font=[UIFont fontWithName:@"OpenSans-Regular" size:17.0];
     [self.cancelButton setTitle:@"Cancel" forState:UIControlStateNormal];
     
     

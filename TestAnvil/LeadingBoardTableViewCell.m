@@ -13,18 +13,19 @@
 - (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier {
     self = [super initWithStyle:style reuseIdentifier:reuseIdentifier];
     if (self) {
-        CGFloat xPadding = 10.0;
-        CGFloat yPadding = 10.0;
+        CGFloat xPadding = 14.0;
+        CGFloat yPadding = 14.0;
         CGFloat imageSize = 40.0;
         
         _profileImageView = [[UIImageView alloc] initWithFrame:CGRectMake(xPadding, yPadding, imageSize, imageSize)];
         _profileImageView.contentMode = UIViewContentModeScaleAspectFill;
-        _profileImageView.layer.cornerRadius = 20;
+        _profileImageView.layer.cornerRadius = imageSize*0.5;
         _profileImageView.backgroundColor = [UIColor redColor];
         _profileImageView.clipsToBounds = YES;
         [self addSubview:_profileImageView];
         
         _screenNameLabel = [[UILabel alloc] initWithFrame:CGRectMake(CGRectGetMaxX(_profileImageView.frame)+xPadding, yPadding, 200, 21)];
+        _screenNameLabel.font = [UIFont fontWithName:@"Lato-Regular" size:17];
         [self addSubview:_screenNameLabel];
     }
     return self;
