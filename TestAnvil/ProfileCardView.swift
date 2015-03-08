@@ -68,7 +68,7 @@ class ProfileCardView: UIView {
         */
         
         requestButton = UIButton()
-        requestButton.frame = CGRectMake(0, CGRectGetHeight(frame)-21-21, CGRectGetWidth(frame), 21)
+        requestButton.frame = CGRectMake(0, CGRectGetHeight(frame)-21-21-15, CGRectGetWidth(frame), 21)
         requestButton.addTarget(self, action: "pressedRequestButton", forControlEvents: UIControlEvents.TouchUpInside)
         requestButton.layer.cornerRadius = 8.0
         requestButton.titleLabel?.font = UIFont(name: "OpenSans-Semibold", size: 17.0)
@@ -99,12 +99,12 @@ class ProfileCardView: UIView {
     
     func pressedRequestButton() {
         
-        let price = "0.3"
+        let price = "0.30"
         
         let alert = UIAlertView()
         alert.delegate = self
-        alert.title = "Alert"
-        alert.message = "You will will be charge $" + price + "to view the location, continue?"
+        alert.title = "LOCASHION"
+        alert.message = "You will will be charge $" + price + " to view the location, continue?"
         alert.addButtonWithTitle("Yes")
         alert.addButtonWithTitle("Cancel")
         alert.show()

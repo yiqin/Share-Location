@@ -130,6 +130,20 @@
     }
 }
 
+- (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section {
+    
+    UIView *tempView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, CGRectGetWidth(tableView.frame), 64)];
+    tempView.backgroundColor = [UIColor colorWithRed:0.80 green:0.80 blue:0.80 alpha:0.9];
+    UILabel *tempLabel = [[UILabel alloc] initWithFrame:CGRectMake(16, 20, CGRectGetWidth(tempView.frame), 44)];
+    tempLabel.text = @"Standings";
+    tempLabel.font = [UIFont fontWithName:@"OpenSans-Semibold" size:17.0];
+    // tempLabel.textColor = [UIColor colorFromHexString:@"4d4d4d"];
+    
+    
+    [tempView addSubview:tempLabel];
+    return tempView;
+}
+
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     if (indexPath.section == 0) {
         NSString *CellIdentifier = @"LeadingBoardCell";

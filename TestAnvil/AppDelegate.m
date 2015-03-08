@@ -298,14 +298,13 @@
     NSString *objectId = [userInfo objectForKey:@"message"];
     [[RequestUserPathDataManager sharedManager] loadLeadingDataWithUserObjectId:objectId success:^(NSArray *array, NSError *error) {
         
-        
         if (array.count > 1) {
             
-            CLLocation *location = [array objectAtIndex:0];
-            
-            
-            
         }
+        else {
+            return;
+        }
+        
 		for (CLLocation* loc in array){
 			NSLog(@" Looc : %@ ", loc);
 		}
