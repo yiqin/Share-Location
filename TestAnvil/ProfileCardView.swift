@@ -116,6 +116,7 @@ class ProfileCardView: UIView {
             break;
         case 0:
             NSLog("Dismiss");
+        NSNotificationCenter.defaultCenter().postNotificationName("dismissLeadingBoardScrollView", object: nil)
             break;
         default:
             NSLog("Default");
