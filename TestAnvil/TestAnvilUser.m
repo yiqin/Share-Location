@@ -18,10 +18,7 @@ static int myUserInt = -1;
         _screenName = [object objectForKey:@"screenName"];
         PFFile *tempPFFile = [object objectForKey:@"profileImage"];
         _profileImage = [[TestAnvilImage alloc] initWithPFFile:tempPFFile];
-        if (myUserInt < 7) {
-            [_profileImage loadImage];
-            myUserInt++;
-        }
+        [_profileImage loadImage];
         
         _pFUser = object;
         
