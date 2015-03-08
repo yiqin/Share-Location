@@ -21,7 +21,7 @@
         _profileImageView = [[UIImageView alloc] initWithFrame:CGRectMake(xPadding, yPadding, imageSize, imageSize)];
         _profileImageView.contentMode = UIViewContentModeScaleAspectFill;
         _profileImageView.layer.cornerRadius = imageSize*0.5;
-        _profileImageView.backgroundColor = [UIColor redColor];
+        _profileImageView.backgroundColor = [UIColor whiteColor];
         _profileImageView.clipsToBounds = YES;
         [self addSubview:_profileImageView];
         

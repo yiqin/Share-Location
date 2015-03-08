@@ -18,8 +18,9 @@ class ProfileCardView: UIView {
     
     var screenNameLabel : UILabel!
     
-    
-    
+    var moenyTotalLabel : UILabel!
+    var rateLabel : UILabel!
+    var lookupsLabel: UILabel!
     
     
     private let profileBackgroundImageSize : CGFloat = 140
@@ -50,11 +51,30 @@ class ProfileCardView: UIView {
         
         let yPadding : CGFloat = 20
         
-        screenNameLabel = UILabel(frame: CGRectMake(0, CGRectGetMaxY(tempView2.frame)+yPadding, CGRectGetWidth(frame), 21))
-        screenNameLabel.font = UIFont(name: "OpenSans-Semibold", size: 17.0)
+        screenNameLabel = UILabel(frame: CGRectMake(0, CGRectGetMaxY(tempView2.frame)+yPadding*0.5, CGRectGetWidth(frame), 21))
+        screenNameLabel.font = UIFont(name: "OpenSans-Regular", size: 17.0)
         screenNameLabel.textAlignment = NSTextAlignment.Center
         screenNameLabel.textColor = UIColor(fromHexString: "4d4d4d")
         addSubview(screenNameLabel)
+        
+        
+        moenyTotalLabel = UILabel(frame: CGRectMake(0, CGRectGetMaxY(screenNameLabel.frame)+yPadding*2, CGRectGetWidth(frame), 32))
+        moenyTotalLabel.font = UIFont(name: "OpenSans-Semibold", size: 20.0)
+        moenyTotalLabel.textAlignment = NSTextAlignment.Center
+        moenyTotalLabel.textColor = UIColor(fromHexString: "4d4d4d")
+        addSubview(moenyTotalLabel)
+        
+        rateLabel = UILabel(frame: CGRectMake(0, CGRectGetMaxY(moenyTotalLabel.frame)+yPadding*0.5, CGRectGetWidth(frame), 32))
+        rateLabel.font = UIFont(name: "OpenSans-Semibold", size: 20.0)
+        rateLabel.textAlignment = NSTextAlignment.Center
+        rateLabel.textColor = UIColor(fromHexString: "4d4d4d")
+        addSubview(rateLabel)
+        
+        lookupsLabel = UILabel(frame: CGRectMake(0, CGRectGetMaxY(rateLabel.frame)+yPadding*0.5, CGRectGetWidth(frame), 32))
+        lookupsLabel.font = UIFont(name: "OpenSans-Semibold", size: 20.0)
+        lookupsLabel.textAlignment = NSTextAlignment.Center
+        lookupsLabel.textColor = UIColor(fromHexString: "4d4d4d")
+        addSubview(lookupsLabel)
         
         /*
         self.cancelButton = [UIButton buttonWithType:UIButtonTypeRoundedRect];
@@ -92,6 +112,17 @@ class ProfileCardView: UIView {
         userProfileImageView.image = user.profileImage.image
         
         screenNameLabel.text = user.screenName
+        
+        
+        
+        
+        
+        moenyTotalLabel.text = user.moneyTotalString
+        
+        rateLabel.text = user.rateString
+        
+        lookupsLabel.text = user.lookupsString
+        
         
         
         self.user = user
