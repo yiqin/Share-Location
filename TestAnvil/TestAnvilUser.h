@@ -24,6 +24,7 @@
 
 @property(nonatomic, strong) NSNumber *rate;
 @property(nonatomic, strong) NSString *rateString;
+@property(nonatomic, strong) NSString *raterateString;
 
 @property(nonatomic, strong) NSNumber *lookups;
 @property(nonatomic, strong) NSString *lookupsString;

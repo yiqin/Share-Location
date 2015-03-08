@@ -32,6 +32,7 @@ static int myUserInt = -1;
         _rate = [object objectForKey:@"rate"];
         double empDoubRate = _rate.doubleValue;
         _rateString = [NSString stringWithFormat:@"Peek Rate: $%.2f", empDoubRate];
+        _raterateString = [NSString stringWithFormat:@"%.2f", empDoubRate];
         
         _lookups = [object objectForKey:@"lookups"];
         double doubleLookups = _lookups.doubleValue;

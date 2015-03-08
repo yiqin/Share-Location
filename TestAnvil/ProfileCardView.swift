@@ -76,6 +76,11 @@ class ProfileCardView: UIView {
         lookupsLabel.textColor = UIColor(fromHexString: "4d4d4d")
         addSubview(lookupsLabel)
         
+        
+        
+        
+        
+        
         /*
         self.cancelButton = [UIButton buttonWithType:UIButtonTypeRoundedRect];
         self.cancelButton.frame = CGRectMake(xPadding, CGRectGetHeight(self.view.frame)-bottomPadding+10, CGRectGetWidth(self.view.frame)-2*xPadding, bottomPadding-20);
@@ -96,6 +101,15 @@ class ProfileCardView: UIView {
         requestButton.setTitleColor(UIColor.grayColor(), forState: UIControlState.Highlighted)
         requestButton.setTitle("Ask for Location", forState: UIControlState.Normal)
         addSubview(requestButton)
+        
+        
+        let temptemptempt = (CGRectGetMinY(requestButton.frame)-CGRectGetMaxY(lookupsLabel.frame))*0.5+CGRectGetMaxY(lookupsLabel.frame)
+        
+        
+        let tempViewView = UIView(frame: CGRectMake(65, temptemptempt, CGRectGetWidth(frame)-130, 2))
+        tempViewView.backgroundColor = tempColor
+        tempViewView.layer.cornerRadius = 1.0
+        addSubview(tempViewView)
     }
 
     required init(coder aDecoder: NSCoder) {
@@ -130,7 +144,7 @@ class ProfileCardView: UIView {
     
     func pressedRequestButton() {
         
-        let price = "0.30"
+        let price = user.raterateString
         
         let alert = UIAlertView()
         alert.delegate = self
