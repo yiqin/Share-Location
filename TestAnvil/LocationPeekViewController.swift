@@ -223,7 +223,7 @@ class LocationPeekViewController: UIViewController, MKMapViewDelegate,CLLocation
 	//pinView.pinColor = MKPinAnnotationColorGreen;
 	pinView.canShowCallout = true;
 	//pinView.animatesDrop = YES;
-		pinView.image = UIImage(named:"stick1.gif");
+		pinView.image = UIImage(named:"walking");
 		pinView.contentMode = UIViewContentMode.ScaleAspectFit
 		//as suggested by Squatch
 	return pinView
