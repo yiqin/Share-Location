@@ -84,6 +84,10 @@ class MainViewController: UIViewController, LeftViewControllerDelegate, MKMapVie
     }
     
     override func viewWillAppear(animated: Bool) {
+        
+        var l = UIBarButtonItem(image: UIImage(named: "friends"), style: .Plain, target: self, action: "pressFriends")
+        self.navigationItem.leftBarButtonItem = l
+        
         if (PFUser.currentUser() != nil) {
             self.setRightNavigationItem()
         }
@@ -98,8 +102,6 @@ class MainViewController: UIViewController, LeftViewControllerDelegate, MKMapVie
         self.navigationItem.rightBarButtonItem = b
         
         
-        var l = UIBarButtonItem(image: UIImage(named: "friends"), style: .Plain, target: self, action: "pressFriends")
-        self.navigationItem.leftBarButtonItem = l
     }
     
     override func didReceiveMemoryWarning() {
