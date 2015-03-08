@@ -120,6 +120,9 @@
 {
     if (!_windowBackground) {
         _windowBackground = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"Window Background"]];
+        CGFloat tempWidth = [UIScreen mainScreen].bounds.size.width;
+        CGFloat tempHeight = [UIScreen mainScreen].bounds.size.height;
+        _windowBackground.frame = CGRectMake(0, 0, tempWidth, tempHeight);
         _windowBackground.contentMode =UIViewContentModeScaleAspectFill;
     }
     return _windowBackground;

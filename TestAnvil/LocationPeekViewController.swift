@@ -5,15 +5,19 @@ import MapKit
 import CoreLocation
 
 class LocationPeekViewController: UIViewController, MKMapViewDelegate,CLLocationManagerDelegate {
+    
 	var mapview:MKMapView!
 	var lManager:CLLocationManager!
 	var infoView:InfoView!
-	var locations:[CLLocation]! = nil;
-	var curLocation:Int = 0;
-	var t1:NSTimer!;
-	var t2:NSTimer!;
-	var intervalTimer:NSTimer!;
-	var interCount:CLLocationDegrees!;
+	var locations:[CLLocation]! = nil
+	var curLocation:Int = 0
+	var t1:NSTimer!
+	var t2:NSTimer!
+	var intervalTimer:NSTimer!
+	var interCount:CLLocationDegrees!
+    
+    var zoomlevel : Double = 0.025
+    
 	override func viewDidLoad() {
 		super.viewDidLoad()
 		// Do any additional setup after loading the view, typically from a nib.
@@ -43,7 +47,7 @@ class LocationPeekViewController: UIViewController, MKMapViewDelegate,CLLocation
 		
 		
 		t1 = NSTimer.scheduledTimerWithTimeInterval(0.2, target: self, selector: Selector("drawNextPathPoint"), userInfo: nil, repeats: true)
-		t2 = NSTimer.scheduledTimerWithTimeInterval(16, target: self, selector: Selector("viewTimeout"), userInfo: nil, repeats: false)
+		t2 = NSTimer.scheduledTimerWithTimeInterval(13, target: self, selector: Selector("viewTimeout"), userInfo: nil, repeats: false)
 		
 		
 		
@@ -66,8 +70,8 @@ class LocationPeekViewController: UIViewController, MKMapViewDelegate,CLLocation
 		//deal with path
 		
 		
-		let spanX = 0.2
-		let spanY = 0.2
+		let spanX = zoomlevel
+		let spanY = zoomlevel
 		var newRegion = MKCoordinateRegion(center: locations[0].coordinate, span: MKCoordinateSpanMake(spanX, spanY))
 		mapview.setRegion(newRegion, animated: true)
 	}
@@ -136,8 +140,8 @@ class LocationPeekViewController: UIViewController, MKMapViewDelegate,CLLocation
 			//deal with path
 			
 			
-			let spanX = 0.2
-			let spanY = 0.2
+			let spanX = zoomlevel
+			let spanY = zoomlevel
 			var newRegion = MKCoordinateRegion(center: locations[curLocation].coordinate, span: MKCoordinateSpanMake(spanX, spanY))
 			mapview.setRegion(newRegion, animated: true)
 			
@@ -178,8 +182,8 @@ class LocationPeekViewController: UIViewController, MKMapViewDelegate,CLLocation
 		//deal with path
 		
 		
-		let spanX = 0.1
-		let spanY = 0.1
+		let spanX = zoomlevel
+		let spanY = zoomlevel
 		var newRegion = MKCoordinateRegion(center: CLLocationCoordinate2DMake(p1lat + dlat, p1lng + dlng ), span: MKCoordinateSpanMake(spanX, spanY))
 		mapview.setRegion(newRegion, animated: true)
 		
