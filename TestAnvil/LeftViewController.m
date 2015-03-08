@@ -216,8 +216,19 @@
 }
 
 - (void)showLeadingBoardScrollView {
+    [self.leadingBoardScrollView setAlpha:0.0];
+    [self.cancelButton setAlpha:0.0];
     [[[UIApplication sharedApplication] delegate].window addSubview:self.leadingBoardScrollView];
     [[[UIApplication sharedApplication] delegate].window addSubview:self.cancelButton];
+    
+    
+    [UIView animateWithDuration:0.5f delay:0.f options:UIViewAnimationOptionCurveEaseIn animations:^{
+        [self.leadingBoardScrollView setAlpha:1.f];
+        [self.cancelButton setAlpha:1.f];
+    } completion:^(BOOL finished) {
+        
+    }];
+    
 }
 
 - (void)createCardWithColor:(TestAnvilUser*)user
@@ -255,8 +266,17 @@
 }
 
 - (void)pressedCancel {
-    [self.leadingBoardScrollView removeFromSuperview];
-    [self.cancelButton removeFromSuperview];
+    
+    [self.leadingBoardScrollView setAlpha:1.0];
+    [self.cancelButton setAlpha:1.0];
+    
+    [UIView animateWithDuration:0.5f delay:0.f options:UIViewAnimationOptionCurveEaseIn animations:^{
+        [self.leadingBoardScrollView setAlpha:.0f];
+        [self.cancelButton setAlpha:.0f];
+    } completion:^(BOOL finished) {
+        [self.leadingBoardScrollView removeFromSuperview];
+        [self.cancelButton removeFromSuperview];
+    }];
 }
 
 
