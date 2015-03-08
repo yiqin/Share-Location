@@ -91,7 +91,7 @@ class MainViewController: UIViewController, LeftViewControllerDelegate {
     }
     
     func setRightNavigationItem() {
-        var b = UIBarButtonItem(title: "Setting", style: .Plain, target: self, action: "pressProfileSetting")
+        var b = UIBarButtonItem(image: UIImage(named: "setting"), style: .Plain, target: self, action: "pressProfileSetting")
         self.navigationItem.rightBarButtonItem = b
         
         
