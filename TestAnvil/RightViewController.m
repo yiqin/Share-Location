@@ -34,14 +34,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
 	
-	//make segment control
-	self.visibilityDescriptionLabel = [[UILabel alloc] initWithFrame:CGRectMake(130, 10, 250, 155)];
-	self.visibilityDescriptionLabel.text =  @"Who can see your location?";
-	[self.view addSubview:self.visibilityDescriptionLabel];
-	self.visibilityControl =  [[UISegmentedControl alloc]initWithItems:@[@"Friends",@"Universal"]];
-	self.visibilityControl.frame = CGRectMake(120, 120, 250, 30);
-    self.visibilityControl.selectedSegmentIndex = 0;
-	[self.view addSubview: self.visibilityControl ];
+	
 
     
     self.privacyHelpButton = [UIButton buttonWithType:UIButtonTypeRoundedRect];
@@ -67,6 +60,22 @@
     
     [self.view addSubview:self.changeSettingButton];
     
+    
+    
+    self.visibilityControl =  [[UISegmentedControl alloc]initWithItems:@[@"Friends",@"Universal"]];
+    self.visibilityControl.frame = CGRectMake(130, CGRectGetMinY(self.privacyHelpButton.frame)-30-60, CGRectGetWidth(self.view.frame)-140, 30);
+    self.visibilityControl.selectedSegmentIndex = 0;
+    [self.view addSubview: self.visibilityControl ];
+    
+    
+    
+    //make segment control
+    self.visibilityDescriptionLabel = [[UILabel alloc] initWithFrame:CGRectMake(130, CGRectGetMinY(self.visibilityControl.frame)-30-5, 250, 30)];
+    self.visibilityDescriptionLabel.text =  @"Who can see your location?";
+    self.visibilityDescriptionLabel.font = [UIFont fontWithName:@"OpenSans-Semibold" size:15.0];
+    self.visibilityDescriptionLabel.textColor = [UIColor colorFromHexString:@"4d4d4d"];
+    self.visibilityDescriptionLabel.textAlignment = NSTextAlignmentCenter;
+    [self.view addSubview:self.visibilityDescriptionLabel];
 }
 
 - (void)didReceiveMemoryWarning {
