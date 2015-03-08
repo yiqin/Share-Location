@@ -19,7 +19,7 @@
 -(instancetype)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
     self = [super initWithNibName:nil bundle:nil];
     if (self) {
-        self.view.backgroundColor = [UIColor colorWithRed:1.0 green:1.0 blue:1.0 alpha:0.7];
+        self.view.backgroundColor = [UIColor colorWithRed:1.0 green:1.0 blue:1.0 alpha:0.8];
         
     }
     return self;
@@ -35,6 +35,7 @@
 	[self.view addSubview:self.visibilityDescriptionLabel];
 	self.visibilityControl =  [[UISegmentedControl alloc]initWithItems:@[@"Friends",@"Universal"]];
 	self.visibilityControl.frame = CGRectMake(120, 150, 250, 30);
+    self.visibilityControl.selectedSegmentIndex = 0;
 	[self.view addSubview: self.visibilityControl ];
 
 
