@@ -16,6 +16,7 @@
         _screenName = [object objectForKey:@"screenName"];
         PFFile *tempPFFile = [object objectForKey:@"profileImage"];
         _profileImage = [[TestAnvilImage alloc] initWithPFFile:tempPFFile];
+        [_profileImage loadImage];
     }
     return self;
 }
