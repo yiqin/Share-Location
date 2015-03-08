@@ -26,6 +26,8 @@
 
 @property(nonatomic, strong) JT3DScrollView *leadingBoardScrollView;
 
+@property(nonatomic, strong) UIButton *cancelButton;
+
 @end
 
 @implementation LeftViewController
@@ -75,6 +77,18 @@
     self.leadingBoardScrollView.delegate = self;
     self.leadingBoardScrollView.effect = JT3DScrollViewEffectDepth;
     
+    
+    self.cancelButton = [UIButton buttonWithType:UIButtonTypeRoundedRect];
+    self.cancelButton.frame = CGRectMake(xPadding, CGRectGetHeight(self.view.frame)-bottomPadding+10, CGRectGetWidth(self.view.frame)-2*xPadding, bottomPadding-20);
+    self.cancelButton.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
+    [self.cancelButton addTarget:self action:@selector(pressedCancel) forControlEvents:UIControlEventTouchUpInside];
+    [self.cancelButton setBackgroundColor:[UIColor colorFromHexString:@"f0f0f0"]];
+    self.cancelButton.layer.cornerRadius = 8;
+    self.cancelButton.titleLabel.font=[UIFont fontWithName:@"OpenSans-Semibold" size:17.0];
+    [self.cancelButton setTitle:@"Cancel" forState:UIControlStateNormal];
+    
+    
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(pressedCancel) name:@"dismissLeadingBoardScrollView" object:nil];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -185,12 +199,24 @@
     
     // [self.delegate showLeadingBoardScrollView: indexPath.row];
     
+    NSArray *viewsToRemove = [self.leadingBoardScrollView subviews];
+    for (UIView *v in viewsToRemove) {
+        [v removeFromSuperview];
+    }
+    
     NSArray *tempArray = [[LeftDataManager sharedManager] getLeadingObjects];
     for (TestAnvilUser *user in tempArray) {
         [self createCardWithColor:user];
     }
     
+    CGFloat width = CGRectGetWidth(self.leadingBoardScrollView.frame);
+    [self.leadingBoardScrollView setContentOffset:CGPointMake(width*indexPath.row,0) animated:NO];
+    [self showLeadingBoardScrollView];
+}
+
+- (void)showLeadingBoardScrollView {
     [[[UIApplication sharedApplication] delegate].window addSubview:self.leadingBoardScrollView];
+    [[[UIApplication sharedApplication] delegate].window addSubview:self.cancelButton];
 }
 
 - (void)createCardWithColor:(TestAnvilUser*)user
@@ -217,6 +243,9 @@
 }
 
 
-
+- (void)pressedCancel {
+    [self.leadingBoardScrollView removeFromSuperview];
+    [self.cancelButton removeFromSuperview];
+}
 
 @end
