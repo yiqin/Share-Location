@@ -73,8 +73,9 @@
     
     
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(receivedRequestToShowOtherUserPath:) name:@"dismissLeadingBoardScrollView" object:nil];
-    
-    
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(openLeftViewController:) name:@"openLeftViewController" object:nil];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(openRightViewController:) name:@"openRightViewController" object:nil];
+
     
     return YES;
 }
@@ -315,11 +316,6 @@
         // array  - CLLocation-s
 		[self.mainViewController presentViewController:[[LocationPeekViewController alloc]init] animated:YES completion:nil];
 		
-		
-        
-        
-        
-        
         
     } failure:^{
         
@@ -327,5 +323,20 @@
     
     
 }
+
+- (void)openLeftViewController:(NSNotification*)notification {
+    [self.dynamicsDrawerViewController setPaneState:MSDynamicsDrawerPaneStateOpen inDirection:MSDynamicsDrawerDirectionLeft animated:YES allowUserInterruption:YES completion:^{
+        
+    }];
+    
+}
+
+- (void)openRightViewController:(NSNotification*)notification {
+    [self.dynamicsDrawerViewController setPaneState:MSDynamicsDrawerPaneStateOpen inDirection:MSDynamicsDrawerDirectionRight animated:YES allowUserInterruption:YES completion:^{
+        
+    }];
+    
+}
+
 
 @end

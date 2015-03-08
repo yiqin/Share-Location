@@ -95,7 +95,7 @@ class MainViewController: UIViewController, LeftViewControllerDelegate {
         self.navigationItem.rightBarButtonItem = b
         
         
-        var l = UIBarButtonItem(image: UIImage(named: "friends"), style: .Plain, target: self, action: "pressProfileSetting")
+        var l = UIBarButtonItem(image: UIImage(named: "friends"), style: .Plain, target: self, action: "pressFriends")
         self.navigationItem.leftBarButtonItem = l
     }
     
@@ -125,6 +125,14 @@ class MainViewController: UIViewController, LeftViewControllerDelegate {
     }
     
     func pressProfileSetting() {
+        
+        NSNotificationCenter.defaultCenter().postNotificationName("openRightViewController", object: nil)
+        
+    }
+    
+    func pressFriends() {
+        
+        NSNotificationCenter.defaultCenter().postNotificationName("openLeftViewController", object: nil)
         
     }
 
