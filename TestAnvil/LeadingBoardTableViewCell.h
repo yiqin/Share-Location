@@ -12,6 +12,7 @@
 
 @property(nonatomic, strong) UILabel *screenNameLabel;
 @property(nonatomic, strong) UIImageView *profileImageView;
+@property(nonatomic, strong) UILabel *scoreLabel;
 
 + (CGFloat)cellHeight;
 

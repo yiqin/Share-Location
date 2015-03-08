@@ -21,6 +21,7 @@
         _pFUser = object;
         
         _moneyTotal = [object objectForKey:@"moneyTotal"];
+        _moneyTotalString = [NSString stringWithFormat:@"Money received: $%@", _moneyTotal];
     }
     return self;
 }

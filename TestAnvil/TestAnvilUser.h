@@ -19,5 +19,6 @@
 @property(nonatomic, strong) NSString *screenName;
 @property(nonatomic, strong) TestAnvilImage *profileImage;
 @property(nonatomic, strong) NSNumber *moneyTotal;
+@property(nonatomic, strong) NSString *moneyTotalString;
 
 @end

@@ -7,6 +7,7 @@
 //
 
 #import "LeadingBoardTableViewCell.h"
+#import <Colours.h>
 
 @implementation LeadingBoardTableViewCell
 
@@ -27,6 +28,11 @@
         _screenNameLabel = [[UILabel alloc] initWithFrame:CGRectMake(CGRectGetMaxX(_profileImageView.frame)+xPadding, yPadding, 200, 21)];
         _screenNameLabel.font = [UIFont fontWithName:@"Lato-Regular" size:17];
         [self addSubview:_screenNameLabel];
+        
+        _scoreLabel = [[UILabel alloc] initWithFrame:CGRectMake(CGRectGetMaxX(_profileImageView.frame)+xPadding, CGRectGetMaxY(_screenNameLabel.frame), 200, 21)];
+        _scoreLabel.font = [UIFont fontWithName:@"Lato-Regular" size:15];
+        _scoreLabel.textColor = [UIColor colorFromHexString:@"4d4d4d"];
+        [self addSubview:_scoreLabel];
     }
     return self;
 }
