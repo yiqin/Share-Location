@@ -7,3 +7,4 @@ pod 'AFNetworking'
 pod 'SVProgressHUD', :head
 pod 'MSDynamicsDrawerViewController'
 pod 'TTTAttributedLabel'
+pod 'JT3DScrollView', '~> 1.0'

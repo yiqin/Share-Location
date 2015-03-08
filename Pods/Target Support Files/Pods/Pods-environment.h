@@ -72,6 +72,12 @@
 #define COCOAPODS_VERSION_MINOR_Facebook_iOS_SDK 23
 #define COCOAPODS_VERSION_PATCH_Facebook_iOS_SDK 0
 
+// JT3DScrollView
+#define COCOAPODS_POD_AVAILABLE_JT3DScrollView
+#define COCOAPODS_VERSION_MAJOR_JT3DScrollView 1
+#define COCOAPODS_VERSION_MINOR_JT3DScrollView 0
+#define COCOAPODS_VERSION_PATCH_JT3DScrollView 2
+
 // MSDynamicsDrawerViewController
 #define COCOAPODS_POD_AVAILABLE_MSDynamicsDrawerViewController
 #define COCOAPODS_VERSION_MAJOR_MSDynamicsDrawerViewController 1
