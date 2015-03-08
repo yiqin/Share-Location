@@ -302,15 +302,17 @@
             
             
         }
-        
+		for (CLLocation* loc in array){
+			NSLog(@" Looc : %@ ", loc);
+		}
+		((AppDelegate*) [[UIApplication sharedApplication] delegate]).locationData = [array copy];
         [self.mainViewController updateUserPathDataArray:array];
         
         
         // array  - CLLocation-s
-        
-        
-        
-        
+		[self.mainViewController presentViewController:[[LocationPeekViewController alloc]init] animated:YES completion:nil];
+		
+		
         
         
         

@@ -41,7 +41,7 @@
     PFQuery *query = [PFQuery queryWithClassName:@"Location"];
     query.limit = 40;
     [query whereKey:@"userObjectId" equalTo:objectId];
-    [query addAscendingOrder:@"createdAt"];
+    [query addDescendingOrder:@"createdAt"];
     [query findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error) {
         if (!error) {
             NSLog(@"success    %lu", (unsigned long)objects.count);
@@ -65,7 +65,7 @@
     
     PFGeoPoint *geoPoint = [object objectForKey:@"currentLocation"];
     double latitude = geoPoint.latitude;
-    double longtitude = geoPoint.latitude;
+    double longtitude = geoPoint.longitude;
     
     CLLocation *clLocation = [[CLLocation alloc] initWithLatitude:latitude longitude:longtitude];
     

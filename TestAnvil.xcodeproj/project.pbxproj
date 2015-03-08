@@ -59,6 +59,7 @@
 		8DB684EC1AAAA85800AB441C /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8DB684EA1AAAA85800AB441C /* LaunchScreen.xib */; };
 		8DB684F81AAAA85800AB441C /* TestAnvilTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DB684F71AAAA85800AB441C /* TestAnvilTests.m */; };
 		8DB685051AAAA8D500AB441C /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8DB685041AAAA8D500AB441C /* CoreLocation.framework */; };
+		ECDA67671AAC176900C491B9 /* LocationPeekViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECDA67661AAC176900C491B9 /* LocationPeekViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -144,6 +145,7 @@
 		8DB684F71AAAA85800AB441C /* TestAnvilTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestAnvilTests.m; sourceTree = "<group>"; };
 		8DB685011AAAA87200AB441C /* TestAnvil-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TestAnvil-Bridging-Header.h"; sourceTree = "<group>"; };
 		8DB685041AAAA8D500AB441C /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		ECDA67661AAC176900C491B9 /* LocationPeekViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationPeekViewController.swift; sourceTree = "<group>"; };
 		FB26C1DF686E05DEF7C6E807 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -287,6 +289,7 @@
 				8D475C2E1AAB59A500A7F60E /* ObjectiveC_MainViewController.m */,
 				8D35AF2D1AABD8D500B42AA9 /* RandomColorGenerator.h */,
 				8D35AF2E1AABD8D500B42AA9 /* RandomColorGenerator.m */,
+				ECDA67661AAC176900C491B9 /* LocationPeekViewController.swift */,
 				8D475C301AAB59CB00A7F60E /* LeftViewController.h */,
 				8D475C311AAB59CB00A7F60E /* LeftViewController.m */,
 				8D35AF301AABD93200B42AA9 /* ProfileCardView.swift */,
@@ -524,6 +527,7 @@
 				8D35AF151AABB53E00B42AA9 /* FacebookDataManager.m in Sources */,
 				8DB684DB1AAAA85800AB441C /* main.m in Sources */,
 				8D475CBA1AAB7F1200A7F60E /* TestAnvilTableViewCell.m in Sources */,
+				ECDA67671AAC176900C491B9 /* LocationPeekViewController.swift in Sources */,
 				8D475CC91AAB866300A7F60E /* LeftDataManager.m in Sources */,
 				8D35AF2F1AABD8D500B42AA9 /* RandomColorGenerator.m in Sources */,
 				8D475C4D1AAB75C200A7F60E /* MainNavigationController.m in Sources */,
