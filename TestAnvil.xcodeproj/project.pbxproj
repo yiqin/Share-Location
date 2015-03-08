@@ -20,6 +20,8 @@
 		8D35AF2A1AABBFD300B42AA9 /* Lato-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8D35AF1F1AABBFD300B42AA9 /* Lato-LightItalic.ttf */; };
 		8D35AF2B1AABBFD300B42AA9 /* Lato-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8D35AF201AABBFD300B42AA9 /* Lato-Regular.ttf */; };
 		8D35AF2C1AABBFD300B42AA9 /* OFL.txt in Resources */ = {isa = PBXBuildFile; fileRef = 8D35AF211AABBFD300B42AA9 /* OFL.txt */; };
+		8D35AF2F1AABD8D500B42AA9 /* RandomColorGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D35AF2E1AABD8D500B42AA9 /* RandomColorGenerator.m */; };
+		8D35AF311AABD93200B42AA9 /* ProfileCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D35AF301AABD93200B42AA9 /* ProfileCardView.swift */; };
 		8D475C0F1AAB370200A7F60E /* CurrentUserManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D475C0E1AAB370200A7F60E /* CurrentUserManager.swift */; };
 		8D475C121AAB3CB900A7F60E /* TestAnvilLocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D475C111AAB3CB900A7F60E /* TestAnvilLocationManager.swift */; };
 		8D475C141AAB4ABB00A7F60E /* NSParseObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D475C131AAB4ABB00A7F60E /* NSParseObject.swift */; };
@@ -84,6 +86,9 @@
 		8D35AF1F1AABBFD300B42AA9 /* Lato-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-LightItalic.ttf"; sourceTree = "<group>"; };
 		8D35AF201AABBFD300B42AA9 /* Lato-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Regular.ttf"; sourceTree = "<group>"; };
 		8D35AF211AABBFD300B42AA9 /* OFL.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = OFL.txt; sourceTree = "<group>"; };
+		8D35AF2D1AABD8D500B42AA9 /* RandomColorGenerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RandomColorGenerator.h; sourceTree = "<group>"; };
+		8D35AF2E1AABD8D500B42AA9 /* RandomColorGenerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RandomColorGenerator.m; sourceTree = "<group>"; };
+		8D35AF301AABD93200B42AA9 /* ProfileCardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileCardView.swift; sourceTree = "<group>"; };
 		8D475C0E1AAB370200A7F60E /* CurrentUserManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrentUserManager.swift; sourceTree = "<group>"; };
 		8D475C111AAB3CB900A7F60E /* TestAnvilLocationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestAnvilLocationManager.swift; sourceTree = "<group>"; };
 		8D475C131AAB4ABB00A7F60E /* NSParseObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSParseObject.swift; sourceTree = "<group>"; };
@@ -275,8 +280,11 @@
 				8D475CD41AABA6A700A7F60E /* InfoView.swift */,
 				8D475C2D1AAB59A500A7F60E /* ObjectiveC_MainViewController.h */,
 				8D475C2E1AAB59A500A7F60E /* ObjectiveC_MainViewController.m */,
+				8D35AF2D1AABD8D500B42AA9 /* RandomColorGenerator.h */,
+				8D35AF2E1AABD8D500B42AA9 /* RandomColorGenerator.m */,
 				8D475C301AAB59CB00A7F60E /* LeftViewController.h */,
 				8D475C311AAB59CB00A7F60E /* LeftViewController.m */,
+				8D35AF301AABD93200B42AA9 /* ProfileCardView.swift */,
 				8D475CC41AAB840700A7F60E /* LeftTableViewCell */,
 				8D475C331AAB59DE00A7F60E /* RightViewController.h */,
 				8D475C341AAB59DE00A7F60E /* RightViewController.m */,
@@ -499,6 +507,7 @@
 				8D475CC01AAB7F8400A7F60E /* DistanceBoardTableViewCell.m in Sources */,
 				8DB684DE1AAAA85800AB441C /* AppDelegate.m in Sources */,
 				8D475CBD1AAB7F6000A7F60E /* LeadingBoardTableViewCell.m in Sources */,
+				8D35AF311AABD93200B42AA9 /* ProfileCardView.swift in Sources */,
 				8D475C0F1AAB370200A7F60E /* CurrentUserManager.swift in Sources */,
 				8D475CD31AABA63C00A7F60E /* MainViewController.swift in Sources */,
 				8DB684E11AAAA85800AB441C /* TestAnvil.xcdatamodeld in Sources */,
@@ -510,6 +519,7 @@
 				8DB684DB1AAAA85800AB441C /* main.m in Sources */,
 				8D475CBA1AAB7F1200A7F60E /* TestAnvilTableViewCell.m in Sources */,
 				8D475CC91AAB866300A7F60E /* LeftDataManager.m in Sources */,
+				8D35AF2F1AABD8D500B42AA9 /* RandomColorGenerator.m in Sources */,
 				8D475C4D1AAB75C200A7F60E /* MainNavigationController.m in Sources */,
 				8D475CCF1AAB8D5000A7F60E /* TestAnvilImage.m in Sources */,
 				8D475CCC1AAB8D0700A7F60E /* TestAnvilUser.m in Sources */,

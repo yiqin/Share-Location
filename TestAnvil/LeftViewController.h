@@ -17,7 +17,7 @@
 @end
 
 
-@interface LeftViewController : UIViewController <UITableViewDataSource, UITableViewDelegate>
+@interface LeftViewController : UIViewController <UITableViewDataSource, UITableViewDelegate, UIScrollViewDelegate>
 
 @property(nonatomic, weak) id<LeftViewControllerDelegate> delegate;
 @property (nonatomic, weak) MSDynamicsDrawerViewController *dynamicsDrawerViewController;

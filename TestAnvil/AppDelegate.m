@@ -100,6 +100,7 @@
     
     LeftViewController *leftViewController = [[LeftViewController alloc] initWithNibName:nil bundle:nil];
     [self.dynamicsDrawerViewController setDrawerViewController:leftViewController forDirection:MSDynamicsDrawerDirectionLeft];
+    leftViewController.delegate = mainViewController;
     
     RightViewController *rightViewController = [[RightViewController alloc] initWithNibName:nil bundle:nil];
     [self.dynamicsDrawerViewController setDrawerViewController:rightViewController forDirection:MSDynamicsDrawerDirectionRight];

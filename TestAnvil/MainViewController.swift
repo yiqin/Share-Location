@@ -15,15 +15,20 @@ class MainViewController: UIViewController, LeftViewControllerDelegate {
     var mapview:MKMapView!
     var lManager:CLLocationManager!
     var infoView:InfoView!
-    
+    var leadingBoardScrollView : JT3DScrollView!
     
     override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: NSBundle?) {
+        
+        let xPadding : CGFloat = 10.0
+        let yPadding : CGFloat = 10.0
+        
+        
         super.init(nibName: nil, bundle: nil)
         self.view.backgroundColor = UIColor.whiteColor()
         
         
-
-        
+        leadingBoardScrollView = JT3DScrollView(frame: CGRectMake(xPadding, yPadding, CGRectGetWidth(self.view.frame)-2*xPadding, CGRectGetHeight(self.view.frame)-2*yPadding))
+        leadingBoardScrollView.backgroundColor = UIColor.blackColor()
         
     }
 
@@ -106,7 +111,7 @@ class MainViewController: UIViewController, LeftViewControllerDelegate {
     func showLeadingBoardScrollView(index: Int) {
         
         
-        
+        view.addSubview(leadingBoardScrollView)
         
     }
 

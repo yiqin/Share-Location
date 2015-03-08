@@ -7,6 +7,8 @@
 //
 
 #import "LeftViewController.h"
+#import <TestAnvil-Swift.h>
+
 #import "LeadingBoardTableViewCell.h"
 #import "DistanceBoardTableViewCell.h"
 #import "CityBoardTableViewCell.h"
@@ -14,11 +16,15 @@
 #import "LeftDataManager.h"
 #import "TestAnvilUser.h"
 
+#import <JT3DScrollView.h>
+
 @interface LeftViewController ()
 
 @property(nonatomic, strong) UITableView *tableView;
 
 @property(nonatomic, strong) NSMutableArray *leadingObjects;
+
+@property(nonatomic, strong) JT3DScrollView *leadingBoardScrollView;
 
 @end
 
@@ -57,6 +63,18 @@
     } failure:^{
         
     }];
+    
+    
+    CGFloat topPadding = 44;
+    CGFloat bottomPadding = 80;
+    CGFloat xPadding = 20;
+    
+    self.leadingBoardScrollView = [[JT3DScrollView alloc] initWithFrame:CGRectMake(xPadding, topPadding, CGRectGetWidth(self.view.frame)-2*xPadding, CGRectGetHeight(self.view.frame)-topPadding-bottomPadding)];
+    self.leadingBoardScrollView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
+    // self.leadingBoardScrollView.backgroundColor = [UIColor blackColor];
+    self.leadingBoardScrollView.delegate = self;
+    self.leadingBoardScrollView.effect = JT3DScrollViewEffectDepth;
+    
 }
 
 - (void)didReceiveMemoryWarning {
@@ -165,13 +183,38 @@
     
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
     
-    [self.delegate showLeadingBoardScrollView: indexPath.row];
+    // [self.delegate showLeadingBoardScrollView: indexPath.row];
     
+    NSArray *tempArray = [[LeftDataManager sharedManager] getLeadingObjects];
+    for (TestAnvilUser *user in tempArray) {
+        [self createCardWithColor:user];
+    }
+    
+    [[[UIApplication sharedApplication] delegate].window addSubview:self.leadingBoardScrollView];
+}
+
+- (void)createCardWithColor:(TestAnvilUser*)user
+{
+    CGFloat width = CGRectGetWidth(self.leadingBoardScrollView.frame);
+    CGFloat height = CGRectGetHeight(self.leadingBoardScrollView.frame);
+    
+    CGFloat x = self.leadingBoardScrollView.subviews.count * width;
+    
+    ProfileCardView *view = [[ProfileCardView alloc] initWithFrame:CGRectMake(x, 0, width, height)];
+    [view setupUser:user];
+    [self.leadingBoardScrollView addSubview:view];
+    self.leadingBoardScrollView.contentSize = CGSizeMake(x + width, height);
+}
+
+- (void)scrollViewDidEndScrollingAnimation:(UIScrollView *)scrollView
+{
     
 }
 
-
-
+- (void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView
+{
+    
+}
 
 
 
