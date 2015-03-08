@@ -13,7 +13,7 @@ class InfoView: UIView {
 	var rateLabel:UILabel! = nil
 	var hitsTodayLabel:UILabel! = nil
 	var totalEarningsLabel:UILabel! = nil
-	var enableLocationSwitch:UISwitch! = { var l = UISwitch(frame: CGRectMake(240, 5, 100, 50)); return l}()
+	var enableLocationSwitch:UISwitch! = { var l = UISwitch(frame: CGRectMake(310, 5, 100, 50)); return l}()
 	
 	
 	//Internal properties
