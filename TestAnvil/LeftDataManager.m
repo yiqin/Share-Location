@@ -37,7 +37,7 @@
 -(instancetype)init {
     self = [super init];
     if (self) {
-        _leadingCount = 6;
+        _leadingCount = 20;
         _distanceCount = 3;
         _cityCount = 10;
         
