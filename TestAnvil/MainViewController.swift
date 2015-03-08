@@ -68,7 +68,7 @@ class MainViewController: UIViewController, LeftViewControllerDelegate {
         let tempText = NSMutableAttributedString(string: "LOCASHION")
         tempText.addAttribute(NSFontAttributeName, value: UIFont(name: "OpenSans-Semibold", size: 17)!, range: NSMakeRange(0, tempText.length))
         
-        tempText.addAttribute(NSForegroundColorAttributeName, value: UIColor.redColor(), range: NSMakeRange(0, 3))
+        tempText.addAttribute(NSForegroundColorAttributeName, value: UIColor.redColor(), range: NSMakeRange(0, 2))
         
         
         let tempWidth = UIScreen.mainScreen().bounds.size.width
