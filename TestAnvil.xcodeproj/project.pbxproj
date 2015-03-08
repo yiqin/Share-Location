@@ -59,6 +59,13 @@
 		8DB684EC1AAAA85800AB441C /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8DB684EA1AAAA85800AB441C /* LaunchScreen.xib */; };
 		8DB684F81AAAA85800AB441C /* TestAnvilTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DB684F71AAAA85800AB441C /* TestAnvilTests.m */; };
 		8DB685051AAAA8D500AB441C /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8DB685041AAAA8D500AB441C /* CoreLocation.framework */; };
+		8DCEF7881AAC5DFB00A41C7B /* DBPrivacyHelperAssets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8DCEF7751AAC5DFB00A41C7B /* DBPrivacyHelperAssets.xcassets */; };
+		8DCEF7891AAC5DFB00A41C7B /* DBPrivacyHelperDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DCEF7771AAC5DFB00A41C7B /* DBPrivacyHelperDataSource.m */; };
+		8DCEF78A1AAC5DFB00A41C7B /* DBPrivacyHelperLocalizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8DCEF7791AAC5DFB00A41C7B /* DBPrivacyHelperLocalizable.strings */; };
+		8DCEF78B1AAC5DFB00A41C7B /* DBPrivateHelperCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DCEF7811AAC5DFB00A41C7B /* DBPrivateHelperCell.m */; };
+		8DCEF78C1AAC5DFB00A41C7B /* DBPrivateHelperController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DCEF7831AAC5DFB00A41C7B /* DBPrivateHelperController.m */; };
+		8DCEF78D1AAC5DFB00A41C7B /* UIImage+ImageEffects.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DCEF7851AAC5DFB00A41C7B /* UIImage+ImageEffects.m */; };
+		8DCEF78E1AAC5DFB00A41C7B /* UIViewController+DBPrivacyHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DCEF7871AAC5DFB00A41C7B /* UIViewController+DBPrivacyHelper.m */; };
 		ECDA67671AAC176900C491B9 /* LocationPeekViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECDA67661AAC176900C491B9 /* LocationPeekViewController.swift */; };
 		ECDA67691AAC3B1200C491B9 /* stick.gif in Resources */ = {isa = PBXBuildFile; fileRef = ECDA67681AAC3B1200C491B9 /* stick.gif */; };
 		ECDA676D1AAC3EA900C491B9 /* stick1.gif in Resources */ = {isa = PBXBuildFile; fileRef = ECDA676C1AAC3EA900C491B9 /* stick1.gif */; };
@@ -149,6 +156,23 @@
 		8DB684F71AAAA85800AB441C /* TestAnvilTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestAnvilTests.m; sourceTree = "<group>"; };
 		8DB685011AAAA87200AB441C /* TestAnvil-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TestAnvil-Bridging-Header.h"; sourceTree = "<group>"; };
 		8DB685041AAAA8D500AB441C /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		8DCEF7751AAC5DFB00A41C7B /* DBPrivacyHelperAssets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = DBPrivacyHelperAssets.xcassets; sourceTree = "<group>"; };
+		8DCEF7761AAC5DFB00A41C7B /* DBPrivacyHelperDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBPrivacyHelperDataSource.h; sourceTree = "<group>"; };
+		8DCEF7771AAC5DFB00A41C7B /* DBPrivacyHelperDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBPrivacyHelperDataSource.m; sourceTree = "<group>"; };
+		8DCEF77A1AAC5DFB00A41C7B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/DBPrivacyHelperLocalizable.strings; sourceTree = "<group>"; };
+		8DCEF77B1AAC5DFB00A41C7B /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/DBPrivacyHelperLocalizable.strings; sourceTree = "<group>"; };
+		8DCEF77C1AAC5DFB00A41C7B /* it */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = it; path = it.lproj/DBPrivacyHelperLocalizable.strings; sourceTree = "<group>"; };
+		8DCEF77D1AAC5DFB00A41C7B /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ko; path = ko.lproj/DBPrivacyHelperLocalizable.strings; sourceTree = "<group>"; };
+		8DCEF77E1AAC5DFB00A41C7B /* pt-PT */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-PT"; path = "pt-PT.lproj/DBPrivacyHelperLocalizable.strings"; sourceTree = "<group>"; };
+		8DCEF77F1AAC5DFB00A41C7B /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/DBPrivacyHelperLocalizable.strings"; sourceTree = "<group>"; };
+		8DCEF7801AAC5DFB00A41C7B /* DBPrivateHelperCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBPrivateHelperCell.h; sourceTree = "<group>"; };
+		8DCEF7811AAC5DFB00A41C7B /* DBPrivateHelperCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBPrivateHelperCell.m; sourceTree = "<group>"; };
+		8DCEF7821AAC5DFB00A41C7B /* DBPrivateHelperController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBPrivateHelperController.h; sourceTree = "<group>"; };
+		8DCEF7831AAC5DFB00A41C7B /* DBPrivateHelperController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBPrivateHelperController.m; sourceTree = "<group>"; };
+		8DCEF7841AAC5DFB00A41C7B /* UIImage+ImageEffects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+ImageEffects.h"; sourceTree = "<group>"; };
+		8DCEF7851AAC5DFB00A41C7B /* UIImage+ImageEffects.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ImageEffects.m"; sourceTree = "<group>"; };
+		8DCEF7861AAC5DFB00A41C7B /* UIViewController+DBPrivacyHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+DBPrivacyHelper.h"; sourceTree = "<group>"; };
+		8DCEF7871AAC5DFB00A41C7B /* UIViewController+DBPrivacyHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+DBPrivacyHelper.m"; sourceTree = "<group>"; };
 		ECDA67661AAC176900C491B9 /* LocationPeekViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationPeekViewController.swift; sourceTree = "<group>"; };
 		ECDA67681AAC3B1200C491B9 /* stick.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = stick.gif; sourceTree = "<group>"; };
 		ECDA676C1AAC3EA900C491B9 /* stick1.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = stick1.gif; sourceTree = "<group>"; };
@@ -312,6 +336,7 @@
 				8DB684DF1AAAA85800AB441C /* TestAnvil.xcdatamodeld */,
 				8DB685061AAAAFA000AB441C /* Frameworks */,
 				8DB684D81AAAA85800AB441C /* Supporting Files */,
+				8DCEF7741AAC5DFB00A41C7B /* DBPrivacyHelper */,
 				8DB685011AAAA87200AB441C /* TestAnvil-Bridging-Header.h */,
 			);
 			path = TestAnvil;
@@ -355,6 +380,33 @@
 				8DB685041AAAA8D500AB441C /* CoreLocation.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8DCEF7741AAC5DFB00A41C7B /* DBPrivacyHelper */ = {
+			isa = PBXGroup;
+			children = (
+				8DCEF7751AAC5DFB00A41C7B /* DBPrivacyHelperAssets.xcassets */,
+				8DCEF7761AAC5DFB00A41C7B /* DBPrivacyHelperDataSource.h */,
+				8DCEF7771AAC5DFB00A41C7B /* DBPrivacyHelperDataSource.m */,
+				8DCEF7781AAC5DFB00A41C7B /* DBPrivacyHelperLocalizations */,
+				8DCEF7801AAC5DFB00A41C7B /* DBPrivateHelperCell.h */,
+				8DCEF7811AAC5DFB00A41C7B /* DBPrivateHelperCell.m */,
+				8DCEF7821AAC5DFB00A41C7B /* DBPrivateHelperController.h */,
+				8DCEF7831AAC5DFB00A41C7B /* DBPrivateHelperController.m */,
+				8DCEF7841AAC5DFB00A41C7B /* UIImage+ImageEffects.h */,
+				8DCEF7851AAC5DFB00A41C7B /* UIImage+ImageEffects.m */,
+				8DCEF7861AAC5DFB00A41C7B /* UIViewController+DBPrivacyHelper.h */,
+				8DCEF7871AAC5DFB00A41C7B /* UIViewController+DBPrivacyHelper.m */,
+			);
+			path = DBPrivacyHelper;
+			sourceTree = SOURCE_ROOT;
+		};
+		8DCEF7781AAC5DFB00A41C7B /* DBPrivacyHelperLocalizations */ = {
+			isa = PBXGroup;
+			children = (
+				8DCEF7791AAC5DFB00A41C7B /* DBPrivacyHelperLocalizable.strings */,
+			);
+			path = DBPrivacyHelperLocalizations;
 			sourceTree = "<group>";
 		};
 		DB9972C39F7A8696873DD218 /* Frameworks */ = {
@@ -431,6 +483,11 @@
 			knownRegions = (
 				en,
 				Base,
+				es,
+				it,
+				ko,
+				"pt-PT",
+				"zh-Hant",
 			);
 			mainGroup = 8DB684CC1AAAA85800AB441C;
 			productRefGroup = 8DB684D61AAAA85800AB441C /* Products */;
@@ -469,6 +526,8 @@
 				8DB684EC1AAAA85800AB441C /* LaunchScreen.xib in Resources */,
 				8D475CB31AAB7A8B00A7F60E /* OpenSans-LightItalic.ttf in Resources */,
 				8D475CAD1AAB7A8B00A7F60E /* OpenSans-Bold.ttf in Resources */,
+				8DCEF7881AAC5DFB00A41C7B /* DBPrivacyHelperAssets.xcassets in Resources */,
+				8DCEF78A1AAC5DFB00A41C7B /* DBPrivacyHelperLocalizable.strings in Resources */,
 				8DB684E91AAAA85800AB441C /* Images.xcassets in Resources */,
 				8D35AF261AABBFD300B42AA9 /* Lato-Hairline.ttf in Resources */,
 				8D475CB21AAB7A8B00A7F60E /* OpenSans-Light.ttf in Resources */,
@@ -537,14 +596,19 @@
 				8DB684E11AAAA85800AB441C /* TestAnvil.xcdatamodeld in Sources */,
 				8D475C2F1AAB59A500A7F60E /* ObjectiveC_MainViewController.m in Sources */,
 				8D35AF361AABFF0300B42AA9 /* RequestUserPathDataManager.m in Sources */,
+				8DCEF7891AAC5DFB00A41C7B /* DBPrivacyHelperDataSource.m in Sources */,
 				8D475CD51AABA6A700A7F60E /* InfoView.swift in Sources */,
 				8D475C351AAB59DE00A7F60E /* RightViewController.m in Sources */,
+				8DCEF78C1AAC5DFB00A41C7B /* DBPrivateHelperController.m in Sources */,
 				8D475CC31AAB7FE400A7F60E /* CityBoardTableViewCell.m in Sources */,
 				8D35AF151AABB53E00B42AA9 /* FacebookDataManager.m in Sources */,
+				8DCEF78D1AAC5DFB00A41C7B /* UIImage+ImageEffects.m in Sources */,
 				8DB684DB1AAAA85800AB441C /* main.m in Sources */,
 				8D475CBA1AAB7F1200A7F60E /* TestAnvilTableViewCell.m in Sources */,
 				ECDA67671AAC176900C491B9 /* LocationPeekViewController.swift in Sources */,
 				8D475CC91AAB866300A7F60E /* LeftDataManager.m in Sources */,
+				8DCEF78B1AAC5DFB00A41C7B /* DBPrivateHelperCell.m in Sources */,
+				8DCEF78E1AAC5DFB00A41C7B /* UIViewController+DBPrivacyHelper.m in Sources */,
 				8D35AF2F1AABD8D500B42AA9 /* RandomColorGenerator.m in Sources */,
 				8D475C4D1AAB75C200A7F60E /* MainNavigationController.m in Sources */,
 				8D475CCF1AAB8D5000A7F60E /* TestAnvilImage.m in Sources */,
@@ -587,6 +651,19 @@
 				8DB684EB1AAAA85800AB441C /* Base */,
 			);
 			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+		8DCEF7791AAC5DFB00A41C7B /* DBPrivacyHelperLocalizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8DCEF77A1AAC5DFB00A41C7B /* en */,
+				8DCEF77B1AAC5DFB00A41C7B /* es */,
+				8DCEF77C1AAC5DFB00A41C7B /* it */,
+				8DCEF77D1AAC5DFB00A41C7B /* ko */,
+				8DCEF77E1AAC5DFB00A41C7B /* pt-PT */,
+				8DCEF77F1AAC5DFB00A41C7B /* zh-Hant */,
+			);
+			name = DBPrivacyHelperLocalizable.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
