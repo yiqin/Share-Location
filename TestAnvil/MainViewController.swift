@@ -10,11 +10,12 @@ import UIKit
 import MapKit
 import CoreLocation
 
-class MainViewController: UIViewController {
+class MainViewController: UIViewController, LeftViewControllerDelegate {
 
     var mapview:MKMapView!
     var lManager:CLLocationManager!
     var infoView:InfoView!
+    
     
     override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: NSBundle?) {
         super.init(nibName: nil, bundle: nil)
@@ -99,6 +100,13 @@ class MainViewController: UIViewController {
     }
     
     func pressProfileSetting() {
+        
+    }
+
+    func showLeadingBoardScrollView(index: Int) {
+        
+        
+        
         
     }
 

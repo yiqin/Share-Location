@@ -10,9 +10,16 @@
 #import <MSDynamicsDrawerViewController.h>
 #import <MSDynamicsDrawerStyler.h>
 
+@protocol LeftViewControllerDelegate <NSObject>
+
+-(void)showLeadingBoardScrollView:(NSInteger) index;
+
+@end
+
 
 @interface LeftViewController : UIViewController <UITableViewDataSource, UITableViewDelegate>
 
+@property(nonatomic, weak) id<LeftViewControllerDelegate> delegate;
 @property (nonatomic, weak) MSDynamicsDrawerViewController *dynamicsDrawerViewController;
 
 @end

@@ -165,9 +165,7 @@
     
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
     
-    
-    
-    
+    [self.delegate showLeadingBoardScrollView: indexPath.row];
     
     
 }

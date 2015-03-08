@@ -5,3 +5,6 @@
 #import <Parse/Parse.h>
 #import <ParseFacebookUtils/PFFacebookUtils.h>
 #import "FacebookDataManager.h"
+
+#import "LeftViewController.h"
+#import <JT3DScrollView.h>
