@@ -24,6 +24,7 @@ class CurrentUserManager: NSObject {
         if (PFUser.currentUser() != nil) {
             self.currentGeoPoint = currentGeoPoint
             self.saveCurrentGeopointToParse()
+            self.saveCurrentGeopointToParseForOthers(currentGeoPoint)
         }
         
     }
@@ -31,6 +32,17 @@ class CurrentUserManager: NSObject {
     func saveCurrentGeopointToParse() {
         PFUser.currentUser()["currentLocation"] = currentGeoPoint
         PFUser.currentUser().saveInBackgroundWithBlock { (succeeded:Bool!, error:NSError!) -> Void in
+            if((succeeded) != nil){
+                // println("update pfuser successfully.")
+            }
+        }
+    }
+    
+    func saveCurrentGeopointToParseForOthers(currentGeoPoint:PFGeoPoint) {
+        var object = PFObject(className: "Location")
+        object["user"] = PFUser.currentUser()
+        object["currentLocation"] = currentGeoPoint
+        object.saveInBackgroundWithBlock { (succeeded:Bool!, error:NSError!) -> Void in
             if((succeeded) != nil){
                 // println("update pfuser successfully.")
             }
