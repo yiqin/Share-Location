@@ -99,19 +99,19 @@ class InfoView: UIView {
         
         
 		rateLabel = UILabel(frame: CGRectMake(self.xPadding, tempRateLabelOffsetY, labelWidth, 20));
-		rateLabel.text = "$0.95"
+		rateLabel.text = "$0.90"
         rateLabel.font = UIFont(name: "Lato-Regular", size: 15)
         rateLabel.textAlignment = NSTextAlignment.Center
 		addSubview(rateLabel)
 		
 		hitsTodayLabel = UILabel(frame: CGRectMake(self.xPadding+labelWidth, tempRateLabelOffsetY, labelWidth, 20));
-		hitsTodayLabel.text = "8 hits"
+		hitsTodayLabel.text = "9 hits"
         hitsTodayLabel.font = UIFont(name: "Lato-Regular", size: 15)
         hitsTodayLabel.textAlignment = NSTextAlignment.Center
 		addSubview(hitsTodayLabel)
 	
 		totalEarningsLabel = UILabel(frame: CGRectMake(self.xPadding+2*labelWidth, tempRateLabelOffsetY, labelWidth, 20));
-		totalEarningsLabel.text = "$206.28"
+		totalEarningsLabel.text = "$13.00"
         totalEarningsLabel.font = UIFont(name: "Lato-Regular", size: 15)
         totalEarningsLabel.textAlignment = NSTextAlignment.Center
 		addSubview(totalEarningsLabel)
