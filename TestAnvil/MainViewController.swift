@@ -94,7 +94,9 @@ class MainViewController: UIViewController, LeftViewControllerDelegate {
         var b = UIBarButtonItem(title: "Setting", style: .Plain, target: self, action: "pressProfileSetting")
         self.navigationItem.rightBarButtonItem = b
         
-        self.navigationItem.leftBarButtonItem = b
+        
+        var l = UIBarButtonItem(image: UIImage(named: "friends"), style: .Plain, target: self, action: "pressProfileSetting")
+        self.navigationItem.leftBarButtonItem = l
     }
     
     override func didReceiveMemoryWarning() {
