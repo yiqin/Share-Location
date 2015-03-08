@@ -52,9 +52,9 @@ class InfoView: UIView {
 		addSubview(earningsTitleLabel)
 		addSubview(enableTitleLabel)
 		addSubview(enableLocationSwitch)
-		
+		enableLocationSwitch.setOn(true, animated: true)
 		rateLabel = UILabel(frame: CGRectMake(2, 95, 100, 20));
-		rateLabel.text = "4 cents"
+		rateLabel.text = "6 cents"
 		rateLabel.textColor = UIColor.whiteColor()
 		addSubview(rateLabel)
 		
@@ -65,7 +65,7 @@ class InfoView: UIView {
 		addSubview(hitsTodayLabel)
 	
 		totalEarningsLabel = UILabel(frame: CGRectMake(262, 95, 140, 20));
-		totalEarningsLabel.text = "352 cents"
+		totalEarningsLabel.text = "$48.20"
 		totalEarningsLabel.textColor = UIColor.whiteColor()
 
 		addSubview(totalEarningsLabel)

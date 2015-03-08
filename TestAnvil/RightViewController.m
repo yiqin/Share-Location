@@ -34,7 +34,7 @@
 	self.visibilityDescriptionLabel.text =  @"Who can see your location?";
 	[self.view addSubview:self.visibilityDescriptionLabel];
 	self.visibilityControl =  [[UISegmentedControl alloc]initWithItems:@[@"Friends",@"Universal"]];
-	self.visibilityControl.frame = CGRectMake(120, 150, 250, 30);
+	self.visibilityControl.frame = CGRectMake(120, 140, 250, 30);
     self.visibilityControl.selectedSegmentIndex = 0;
 	[self.view addSubview: self.visibilityControl ];
 
