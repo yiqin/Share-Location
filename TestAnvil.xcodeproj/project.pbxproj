@@ -60,6 +60,9 @@
 		8DB684F81AAAA85800AB441C /* TestAnvilTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DB684F71AAAA85800AB441C /* TestAnvilTests.m */; };
 		8DB685051AAAA8D500AB441C /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8DB685041AAAA8D500AB441C /* CoreLocation.framework */; };
 		ECDA67671AAC176900C491B9 /* LocationPeekViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECDA67661AAC176900C491B9 /* LocationPeekViewController.swift */; };
+		ECDA67691AAC3B1200C491B9 /* stick.gif in Resources */ = {isa = PBXBuildFile; fileRef = ECDA67681AAC3B1200C491B9 /* stick.gif */; };
+		ECDA676D1AAC3EA900C491B9 /* stick1.gif in Resources */ = {isa = PBXBuildFile; fileRef = ECDA676C1AAC3EA900C491B9 /* stick1.gif */; };
+		ECDA676F1AAC3F8C00C491B9 /* stick2.gif in Resources */ = {isa = PBXBuildFile; fileRef = ECDA676E1AAC3F8C00C491B9 /* stick2.gif */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -146,6 +149,9 @@
 		8DB685011AAAA87200AB441C /* TestAnvil-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TestAnvil-Bridging-Header.h"; sourceTree = "<group>"; };
 		8DB685041AAAA8D500AB441C /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		ECDA67661AAC176900C491B9 /* LocationPeekViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationPeekViewController.swift; sourceTree = "<group>"; };
+		ECDA67681AAC3B1200C491B9 /* stick.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = stick.gif; sourceTree = "<group>"; };
+		ECDA676C1AAC3EA900C491B9 /* stick1.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = stick1.gif; sourceTree = "<group>"; };
+		ECDA676E1AAC3F8C00C491B9 /* stick2.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = stick2.gif; sourceTree = "<group>"; };
 		FB26C1DF686E05DEF7C6E807 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -312,6 +318,9 @@
 		8DB684D81AAAA85800AB441C /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				ECDA676E1AAC3F8C00C491B9 /* stick2.gif */,
+				ECDA676C1AAC3EA900C491B9 /* stick1.gif */,
+				ECDA67681AAC3B1200C491B9 /* stick.gif */,
 				8DB684D91AAAA85800AB441C /* Info.plist */,
 				8DB684DA1AAAA85800AB441C /* main.m */,
 				8D35AF161AABBFD300B42AA9 /* Lato */,
@@ -440,6 +449,7 @@
 				8D475CB51AAB7A8B00A7F60E /* OpenSans-Semibold.ttf in Resources */,
 				8D35AF231AABBFD300B42AA9 /* Lato-BlackItalic.ttf in Resources */,
 				8D475CB61AAB7A8B00A7F60E /* OpenSans-SemiboldItalic.ttf in Resources */,
+				ECDA67691AAC3B1200C491B9 /* stick.gif in Resources */,
 				8DB684E71AAAA85800AB441C /* Main.storyboard in Resources */,
 				8D475CB41AAB7A8B00A7F60E /* OpenSans-Regular.ttf in Resources */,
 				8D35AF2C1AABBFD300B42AA9 /* OFL.txt in Resources */,
@@ -450,6 +460,7 @@
 				8D35AF241AABBFD300B42AA9 /* Lato-Bold.ttf in Resources */,
 				8D475CB01AAB7A8B00A7F60E /* OpenSans-ExtraBoldItalic.ttf in Resources */,
 				8D35AF2A1AABBFD300B42AA9 /* Lato-LightItalic.ttf in Resources */,
+				ECDA676D1AAC3EA900C491B9 /* stick1.gif in Resources */,
 				8D35AF281AABBFD300B42AA9 /* Lato-Italic.ttf in Resources */,
 				8D35AF271AABBFD300B42AA9 /* Lato-HairlineItalic.ttf in Resources */,
 				8DB684EC1AAAA85800AB441C /* LaunchScreen.xib in Resources */,
@@ -460,6 +471,7 @@
 				8D475CB21AAB7A8B00A7F60E /* OpenSans-Light.ttf in Resources */,
 				8D475CAE1AAB7A8B00A7F60E /* OpenSans-BoldItalic.ttf in Resources */,
 				8D475CAF1AAB7A8B00A7F60E /* OpenSans-ExtraBold.ttf in Resources */,
+				ECDA676F1AAC3F8C00C491B9 /* stick2.gif in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

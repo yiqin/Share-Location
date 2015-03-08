@@ -205,5 +205,30 @@ class LocationPeekViewController: UIViewController, MKMapViewDelegate,CLLocation
 	}
 	return nil
 	}
+	
+
+	func  mapView(mapView: MKMapView!, viewForAnnotation annotation: MKAnnotation!) -> MKAnnotationView!
+		
+	{
+	var pinView:MKAnnotationView! = nil;
+	
+	//static NSString *defaultPinID = @"com.invasivecode.pin";
+	//pinView = (MKAnnotationView *)[mapView dequeueReusableAnnotationViewWithIdentifier:defaultPinID];
+	//if ( pinView == nil )
+//	pinView = [[MKAnnotationView alloc]
+		pinView = MKAnnotationView(frame: CGRectMake(0, 0, 7, 7))
+		pinView.annotation = annotation
+	//initWithAnnotation:annotation reuseIdentifier:defaultPinID];
+	
+	//pinView.pinColor = MKPinAnnotationColorGreen;
+	pinView.canShowCallout = true;
+	//pinView.animatesDrop = YES;
+		pinView.image = UIImage(named:"stick1.gif");
+		pinView.contentMode = UIViewContentMode.ScaleAspectFit
+		//as suggested by Squatch
+	return pinView
+	}
+	
+	
 }
 
