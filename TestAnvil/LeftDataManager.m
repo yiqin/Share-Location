@@ -54,7 +54,7 @@
     
     PFQuery *query = [PFQuery queryWithClassName:@"_User"];
     query.limit = self.leadingCount;
-    [query addDescendingOrder:@"moneyTotal"];
+    [query addDescendingOrder:@"rate"];
     [query findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error) {
         if (!error) {
             NSLog(@"success    %lu", (unsigned long)objects.count);

@@ -27,6 +27,9 @@
 
 @property (nonatomic, strong) UIView *tempView;
 
+@property(nonatomic, strong) UILabel *screenNameLabel;
+
+
 @end
 
 @implementation RightViewController
@@ -108,6 +111,14 @@
     self.tempView.clipsToBounds = true;
     [self.view insertSubview:self.tempView belowSubview:self.userProfileImageView];
     
+    
+    self.screenNameLabel = [[UILabel alloc] initWithFrame:CGRectMake(120, self.profileBackgroundImageSize+64+10, CGRectGetWidth(self.view.frame)-120, 33)];
+    self.screenNameLabel.font = [UIFont fontWithName:@"OpenSans-Semibold" size:20.0];
+    self.screenNameLabel.textColor = [UIColor colorFromHexString:@"4d4d4d"];
+    self.screenNameLabel.textAlignment = NSTextAlignmentCenter;
+    [self.view addSubview:self.screenNameLabel];
+    
+    
     [self loadCurrentUserProfile];
 }
 
@@ -140,6 +151,9 @@
     
     
     PFFile *file =  [PFUser currentUser][@"profileImage"];
+    
+    self.screenNameLabel.text = [PFUser currentUser][@"screenName"];
+
     
     NSURL *url = [NSURL URLWithString:file.url];
     NSURLRequest *urlRquest  = [NSURLRequest requestWithURL:url];

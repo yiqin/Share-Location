@@ -164,7 +164,7 @@
             [self downloadImageAndReloadCell:indexPath];
         }
         cell.screenNameLabel.text = user.screenName;
-        cell.scoreLabel.text = user.moneyTotalString;
+        cell.scoreLabel.text = user.rateString;
         
         // cell.textLabel.text = user.screenName;
         return cell;

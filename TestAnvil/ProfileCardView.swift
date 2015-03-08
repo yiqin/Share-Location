@@ -149,7 +149,7 @@ class ProfileCardView: UIView {
         let alert = UIAlertView()
         alert.delegate = self
         alert.title = "LOCASHION"
-        alert.message = "You will will be charge $" + price + " to view the location, continue?"
+        alert.message = "You will will be charged $" + price + " to view the location, continue?"
         alert.addButtonWithTitle("Yes")
         alert.addButtonWithTitle("Cancel")
         alert.show()
