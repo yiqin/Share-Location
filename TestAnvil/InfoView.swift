@@ -22,8 +22,8 @@ class InfoView: UIView {
 									l.textColor = UIColor.whiteColor();
 									return l}()
 	
-	var enableTitleLabel:UILabel = {  var l = UILabel(frame: CGRectMake(2, 5, 200, 20));
-		l.text = "Enable Location ";
+	var enableTitleLabel:UILabel = {  var l = UILabel(frame: CGRectMake(2, 5, 250, 20));
+		l.text = "Enable Location uploading ";
 		l.textColor = UIColor.whiteColor();
 		return l}()
 	

@@ -9,6 +9,8 @@
 #import "RightViewController.h"
 
 @interface RightViewController ()
+@property (nonatomic, strong) UISegmentedControl *visibilityControl;
+@property (nonatomic, strong) UILabel	*visibilityDescriptionLabel;
 
 @end
 
@@ -26,6 +28,16 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+	
+	//make segment control
+	self.visibilityDescriptionLabel = [[UILabel alloc] initWithFrame:CGRectMake(125, 10, 250, 155)];
+	self.visibilityDescriptionLabel.text =  @"Who should be able to see your location?";
+	[self.view addSubview:self.visibilityDescriptionLabel];
+	self.visibilityControl =  [[UISegmentedControl alloc]initWithItems:@[@"Friends",@"Universal"]];
+	self.visibilityControl.frame = CGRectMake(125, 150, 250, 30);
+	[self.view addSubview: self.visibilityControl ];
+
+
 }
 
 - (void)didReceiveMemoryWarning {
