@@ -8,14 +8,16 @@ class LocationPeekViewController: UIViewController, MKMapViewDelegate,CLLocation
     
 	var mapview:MKMapView!
 	var lManager:CLLocationManager!
+	var countdownLabel:UILabel!
 	var infoView:InfoView!
 	var locations:[CLLocation]! = nil
 	var curLocation:Int = 0
 	var t1:NSTimer!
 	var t2:NSTimer!
+	var t3:NSTimer!
 	var intervalTimer:NSTimer!
 	var interCount:CLLocationDegrees!
-    
+	var timeLeft:Int = 13
     var zoomlevel : Double = 0.025
     
 	override func viewDidLoad() {
@@ -29,6 +31,13 @@ class LocationPeekViewController: UIViewController, MKMapViewDelegate,CLLocation
 		//[ CLLocation(latitude: 41, longitude: -90.02), CLLocation(latitude: 41, longitude: -90.03), CLLocation(latitude: 41.01, longitude: -90.04),CLLocation(latitude: 41.02, longitude: -90.05),CLLocation(latitude: 41.003, longitude: -90.05),CLLocation(latitude: 41.06, longitude: -90.06),CLLocation(latitude: 41.07, longitude: -90.07)]
 		
 		//Location Manager setup
+		countdownLabel = UILabel(frame: CGRectMake(view.frame.width/2 - 20, 50, 60, 40));
+		countdownLabel.backgroundColor	= UIColor.blueberryColor()
+		countdownLabel.alpha = 0.7
+		countdownLabel.text = "\(timeLeft)"
+		countdownLabel.textColor = UIColor.lightCreamColor()
+		countdownLabel.font = UIFont(name: "OpenSans-Semibold", size: 38)
+		countdownLabel.textAlignment = NSTextAlignment.Center
 		lManager = CLLocationManager()
 		lManager.delegate = self
 		lManager.desiredAccuracy = kCLLocationAccuracyBest
@@ -45,9 +54,11 @@ class LocationPeekViewController: UIViewController, MKMapViewDelegate,CLLocation
 		mapview.delegate=self;
 		view .addSubview(mapview)
 		
-		
+		view.addSubview(countdownLabel)
+
 		t1 = NSTimer.scheduledTimerWithTimeInterval(0.2, target: self, selector: Selector("drawNextPathPoint"), userInfo: nil, repeats: true)
 		t2 = NSTimer.scheduledTimerWithTimeInterval(13, target: self, selector: Selector("viewTimeout"), userInfo: nil, repeats: false)
+		t3 = NSTimer.scheduledTimerWithTimeInterval(1.0, target: self, selector: Selector("reduceTimer"), userInfo: nil, repeats: true)
 		
 		
 		
@@ -81,6 +92,11 @@ class LocationPeekViewController: UIViewController, MKMapViewDelegate,CLLocation
 	}
 	func locationManager(manager: CLLocationManager!, didUpdateLocations locations: [AnyObject]!) {
 		
+	}
+	func reduceTimer(){
+		timeLeft = timeLeft - 1
+		countdownLabel.text = "\(timeLeft)"
+
 	}
 	
 	func drawNextPathPoint() {
