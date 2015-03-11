@@ -9,7 +9,6 @@
 #import "TestAnvilUser.h"
 
 @implementation TestAnvilUser
-static int myUserInt = -1;
 
 -(instancetype)initWithParseObject:(PFObject *)object {
     self = [super init];

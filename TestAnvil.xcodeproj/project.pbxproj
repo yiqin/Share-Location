@@ -66,6 +66,7 @@
 		8DCEF78C1AAC5DFB00A41C7B /* DBPrivateHelperController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DCEF7831AAC5DFB00A41C7B /* DBPrivateHelperController.m */; };
 		8DCEF78D1AAC5DFB00A41C7B /* UIImage+ImageEffects.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DCEF7851AAC5DFB00A41C7B /* UIImage+ImageEffects.m */; };
 		8DCEF78E1AAC5DFB00A41C7B /* UIViewController+DBPrivacyHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DCEF7871AAC5DFB00A41C7B /* UIViewController+DBPrivacyHelper.m */; };
+		8DF76F641AB0A3F1003F88B6 /* QTouchposeApplication.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DF76F631AB0A3F1003F88B6 /* QTouchposeApplication.m */; };
 		ECDA67671AAC176900C491B9 /* LocationPeekViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECDA67661AAC176900C491B9 /* LocationPeekViewController.swift */; };
 		ECDA67691AAC3B1200C491B9 /* stick.gif in Resources */ = {isa = PBXBuildFile; fileRef = ECDA67681AAC3B1200C491B9 /* stick.gif */; };
 		ECDA676D1AAC3EA900C491B9 /* stick1.gif in Resources */ = {isa = PBXBuildFile; fileRef = ECDA676C1AAC3EA900C491B9 /* stick1.gif */; };
@@ -173,6 +174,8 @@
 		8DCEF7851AAC5DFB00A41C7B /* UIImage+ImageEffects.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ImageEffects.m"; sourceTree = "<group>"; };
 		8DCEF7861AAC5DFB00A41C7B /* UIViewController+DBPrivacyHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+DBPrivacyHelper.h"; sourceTree = "<group>"; };
 		8DCEF7871AAC5DFB00A41C7B /* UIViewController+DBPrivacyHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+DBPrivacyHelper.m"; sourceTree = "<group>"; };
+		8DF76F621AB0A3F1003F88B6 /* QTouchposeApplication.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QTouchposeApplication.h; sourceTree = "<group>"; };
+		8DF76F631AB0A3F1003F88B6 /* QTouchposeApplication.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QTouchposeApplication.m; sourceTree = "<group>"; };
 		ECDA67661AAC176900C491B9 /* LocationPeekViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationPeekViewController.swift; sourceTree = "<group>"; };
 		ECDA67681AAC3B1200C491B9 /* stick.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = stick.gif; sourceTree = "<group>"; };
 		ECDA676C1AAC3EA900C491B9 /* stick1.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = stick1.gif; sourceTree = "<group>"; };
@@ -337,6 +340,7 @@
 				8DB685061AAAAFA000AB441C /* Frameworks */,
 				8DB684D81AAAA85800AB441C /* Supporting Files */,
 				8DCEF7741AAC5DFB00A41C7B /* DBPrivacyHelper */,
+				8DF76F611AB0A3F1003F88B6 /* QTouchposeApplication */,
 				8DB685011AAAA87200AB441C /* TestAnvil-Bridging-Header.h */,
 			);
 			path = TestAnvil;
@@ -408,6 +412,15 @@
 			);
 			path = DBPrivacyHelperLocalizations;
 			sourceTree = "<group>";
+		};
+		8DF76F611AB0A3F1003F88B6 /* QTouchposeApplication */ = {
+			isa = PBXGroup;
+			children = (
+				8DF76F621AB0A3F1003F88B6 /* QTouchposeApplication.h */,
+				8DF76F631AB0A3F1003F88B6 /* QTouchposeApplication.m */,
+			);
+			path = QTouchposeApplication;
+			sourceTree = SOURCE_ROOT;
 		};
 		DB9972C39F7A8696873DD218 /* Frameworks */ = {
 			isa = PBXGroup;
@@ -615,6 +628,7 @@
 				8D475CCC1AAB8D0700A7F60E /* TestAnvilUser.m in Sources */,
 				8D475C121AAB3CB900A7F60E /* TestAnvilLocationManager.swift in Sources */,
 				8D475C141AAB4ABB00A7F60E /* NSParseObject.swift in Sources */,
+				8DF76F641AB0A3F1003F88B6 /* QTouchposeApplication.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

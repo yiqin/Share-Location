@@ -21,6 +21,9 @@
 #import "LeftDataManager.h"
 #import <ParseFacebookUtils/PFFacebookUtils.h>
 
+#import "QTouchposeApplication.h"
+
+
 @interface AppDelegate () <MSDynamicsDrawerViewControllerDelegate>
 
 @property (nonatomic, strong) UIImageView *windowBackground;
@@ -33,6 +36,19 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    
+    QTouchposeApplication *touchposeApplication = (QTouchposeApplication *)application;
+    touchposeApplication.alwaysShowTouches = NO;
+#ifdef DEBUG
+    touchposeApplication.alwaysShowTouches = YES;
+#endif
+    
+    touchposeApplication.touchColor = [UIColor colorWithRed:240/255.f green:159/255.f blue:254/255.f alpha:1];
+    touchposeApplication.touchEndAnimationDuration = 0.3f;
+    touchposeApplication.touchEndTransform = CATransform3DMakeScale(0.5, 0.5, 1);
+    
+    
     
     // Setting the navigation bar style
     [[UINavigationBar appearance] setBarTintColor:[UIColor colorFromHexString:@"f0f0f0"]];
