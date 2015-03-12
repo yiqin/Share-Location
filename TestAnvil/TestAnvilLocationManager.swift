@@ -39,7 +39,7 @@ class TestAnvilLocationManager: NSObject, CLLocationManagerDelegate{
     
     func locationManager(manager: CLLocationManager!,
         didChangeAuthorizationStatus status: CLAuthorizationStatus) {
-            if status == CLAuthorizationStatus.Authorized || status == CLAuthorizationStatus.AuthorizedWhenInUse {
+            if status == CLAuthorizationStatus.AuthorizedAlways || status == CLAuthorizationStatus.AuthorizedWhenInUse {
                 manager.startUpdatingLocation()
                 // ...
             }
